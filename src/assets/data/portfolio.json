@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "JOTNO-Online Healthcare System",
+    "url": "https://www.jotno.net/",
+    "technology": "Angular, Spring Boot, MySQL, Elastic Search, RabbitMQ, AWS, Docker, Jenkins, Firebase",
+    "role": "Full stack software engineer",
+    "contribution": [
+      "End-to-End video calling system design (database, API and front-end integration)",
+      "Implemented doctor prescription portal",
+      "Designed patient portal",
+      "Optimized doctor search mechanism using Elastic Search"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "E-KYC Fraud Detection System",
+    "url": "https://play.google.com/store/apps/details?id=com.dbbl.mbs.apps.main",
+    "technology": "Flask, TensorFlow, Keras, OpenCV, Python, Waitress",
+    "role": "Core system developer",
+    "contribution": [
+      "Developed an efficient deep learning based system to detect real/fake human face and spoofing attack",
+      "Designed and implemented REST web service for using in the banking clients"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Remittance Collection System",
+    "url": "",
+    "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
+    "role": "Full stack",
+    "contribution": [
+      "Integrated various APIs for online transactions",
+      "Developed front-end application"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Human Resource Management System",
+    "url": "",
+    "technology": "Angular, SASS, Spring Boot, Oracle, BI Report",
+    "role": "Core developer",
+    "contribution": [
+      "Worked on the employee information, salary disbursement and performance grading module",
+      "Developed web services for client application",
+      "Designed UIs for consuming web services"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Payroll Payment Integration (Grameen Phone and Epyllion Group)",
+    "url": "",
+    "technology": "Angular, Bootstrap, Spring Boot, Oracle, Hibernate",
+    "role": "Core developer",
+    "contribution": [
+      "Developed REST APIs for salary disbursement modules",
+      "Designed frontend application"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Agent Banking ORO Commission Automation System",
+    "url": "",
+    "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
+    "role": "Back-end developer",
+    "contribution": [
+      "Implemented a fully automated commission system for outlets",
+      "Designed frontend application"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Problem Management System",
+    "technology": "Angular, Bootstrap, Spring Boot, Oracle, iReport, RabbitMQ",
+    "role": "Full stack developer",
+    "contribution": [
+      "Designed a three-tier system using JWT",
+      "Developed back-end web services and client frontend",
+      "Designed database"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cryptocurrency Monitoring System",
+    "url": "https://www.crypto.com",
+    "technology": " Angular, Spring Boot, PostgreSQL",
+    "role": "Back-end developer",
+    "contribution": [
+      "Implemented API authentication system",
+      "Designed database and various REST web services"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Web Scrapping System",
+    "url": "",
+    "technology": "Java, Groovy, Spring Framework, SQLite",
+    "role": "Core developer",
+    "contribution": [
+      "Implemented an efficient web parsing engine using Regular Expression",
+      "Designed database"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "E-Commerce Store",
+    "url": "https://aodoubleclick.com/",
+    "technology": "Angular, Spring Boot, MySQL",
+    "role": "Full stack developer",
+    "contribution": [
+      "Implemented product Recommender System",
+      "Developed the product ordering, billing and tracking system"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "University Management System",
+    "url": "www.northsouth.edu",
+    "technology": "Thymeleaf, Spring Boot, PostgreSQL",
+    "role": "Full stack developer",
+    "contribution": [
+      "Developed Online Classroom System",
+      "Implemented the E-Recruitment and file storing system"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Virtual Doctor",
+    "url": "http://www.tauhuky.com/",
+    "technology": "Thymeleaf, Spring Boot, MySQL",
+    "role": "Full stack developer",
+    "contribution": [
+      "Developed the system for Vietnam Client",
+      "Designed database"
+    ]
+  }
+]

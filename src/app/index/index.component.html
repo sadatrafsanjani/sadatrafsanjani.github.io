@@ -1,0 +1,180 @@
+<app-navigation></app-navigation>
+
+<div id="layoutSidenav">
+
+  <app-sidebar></app-sidebar>
+
+  <div id="layoutSidenav_content">
+    <main>
+      <div class="container-fluid px-4 py-5">
+
+        <div class="row" id="about">
+          <h2 class="mb-3 h2">About</h2>
+          <div class="col-lg-12">
+            <p class="justify-content-evenly">
+              I am a full stack developer interested in enterprise level scalable multi-tenant
+              and event-driven microservice system design to evolve as a successful solution
+              architect. I have experience in all stages of software development life cycle
+              with proven track records.
+            </p>
+          </div>
+        </div>
+
+        <div class="row" id="skill">
+          <h2 class="mt-5 mb-3 h2">Skills</h2>
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li class="font-monospace">
+                <span class="fw-bold">Frontend:</span> Angular, ReactJS, JavaScript, HTML, CSS, Bootstrap
+              </li>
+              <li class="font-monospace">
+                <span class="fw-bold">Backend:</span> Spring (Boot, MVC, JPA, Security, Cloud, Batch), Servlet, J2EE, JSF, JSP
+              </li>
+              <li class="font-monospace">
+                <span class="fw-bold">Database:</span> Oracle, PostgreSQL, MySQL, MongoDB, Elastic Search
+              </li>
+              <li class="font-monospace">
+                <span class="fw-bold">Server:</span> AWS, Docker, Heroku, Tomcat, WebLogic, WebSphere
+              </li>
+              <li class="font-monospace">
+                <span class="fw-bold">Source Code Management:</span> Jira, Confluence, Atlassian, GitHub, Bitbucket, Jenkins
+              </li>
+              <li class="font-monospace">
+                <span class="fw-bold">Build System:</span> Maven, Gradle
+              </li>
+              <li class="font-monospace">
+                <span class="fw-bold">Message Broker:</span> RabbitMQ, ActiveMQ, Apache Kafka
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="experience">
+          <h2 class="mt-5 mb-3 h2">Experiences</h2>
+          <div class="col-lg-12">
+
+            <p>
+              Here you can have a short description of past experiences. For details, please have a look
+              in the portfolio section where I have discussed about my individual role, technologies
+              used in the projects and my specific contributions.
+            </p>
+
+            <h5 class="text-brown-primary">Senior Software Engineer</h5>
+            <h6 class="text-brown-secondary">Square Health (October,2021 - March,2022)</h6>
+            <p>Responsibilities:</p>
+            <ul class="mb-4">
+              <li>Implemented video calling system</li>
+              <li>Back-end and front-end development</li>
+              <li>Deployment</li>
+            </ul>
+
+            <h5 class="text-brown-primary">MTO (Software)</h5>
+            <h6 class="text-brown-secondary">Dutch-Bangla Bank Ltd. (February,2020 - October,2021)</h6>
+            <p>Responsibilities:</p>
+            <ul class="mb-4">
+              <li>End-to-End System Design (Database, Web Service and Front-end)</li>
+              <li>Deployment</li>
+            </ul>
+
+            <h5 class="text-brown-primary">Software Engineer</h5>
+            <h6 class="text-brown-secondary">Service Engine (October,2019 - February,2020)</h6>
+            <p>Responsibilities:</p>
+            <ul class="mb-4">
+              <li>Full stack software development</li>
+              <li>Designed applications for European/Singapore clients</li>
+            </ul>
+
+            <h5 class="text-brown-primary">Full Stack Web Developer (Remote)</h5>
+            <h6 class="text-brown-secondary">AOdoubleclick (March,2019 - February,2020)</h6>
+            <p>Responsibilities:</p>
+            <ul class="mb-4">
+              <li>Developed Web Services and Recommender System</li>
+              <li>Implemented microservice architecture</li>
+            </ul>
+
+            <h5 class="text-brown-primary">Officer</h5>
+            <h6 class="text-brown-secondary">North South University (September,2016 - March,2019)</h6>
+            <p>Responsibilities:</p>
+            <ul class="mb-4">
+              <li>Web application development</li>
+              <li>Executive IT Trainer</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="row" id="education">
+          <h2 class="mt-5 mb-3">Education</h2>
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li>
+                <h6 class="h6 text-brown-primary">Master in Information Technology |
+                  <span class="text-dark-ash">Dhaka University (Appeared, 2020)</span>
+                </h6>
+              </li>
+              <li>
+                <h6 class="h6 text-brown-primary">BSc in Computer Science and Engineering |
+                  <span class="text-dark-ash">National University (CGPA: 3.47, 2016)</span>
+                </h6>
+              </li>
+              <li>
+                <h6 class="h6 text-brown-primary">HSC |
+                  <span class="text-dark-ash">St. Joseph Higher Secondary School (CGPA: 4.80, 2010)</span>
+                </h6>
+              </li>
+              <li>
+                <h6 class="h6 text-brown-primary">SSC |
+                  <span class="text-dark-ash">Mirpur Bangla High School (CGPA: 5.00, 2008)</span>
+                </h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="portfolio">
+          <h2 class="mt-5 mb-3">Portfolio</h2>
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li *ngFor="let portfolio of portfolios" class="mb-4">
+                <h5 class="h5">{{portfolio.title}}
+                  <a *ngIf="portfolio.url" href="{{portfolio.url}}"><fa-icon [icon]="faLink" class="text-primary"></fa-icon></a>
+                </h5>
+                <ul *ngFor="let work of portfolio.contribution">
+                  <li>{{ work }}</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="research">
+          <h2 class="mt-5 mb-3">Research and Publication</h2>
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li>
+                <h6 class="h6 text-brown-primary">Violent Human Behavior Detection from Videos Using Machine Learning
+                  <span class="text-dark-ash">(Accepted, DUJASE, 2022)</span>
+                </h6>
+              </li>
+              <li>
+                <h6 class="h6 text-brown-primary">Violent Incident Detection from Videos Using Transfer Learning
+                  <span class="text-dark-ash">(On-going, 97% Accuracy)</span>
+                </h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="references">
+          <h2 class="mt-5 mb-3">References</h2>
+          <div class="col-lg-12">
+            <p>Please contact over mail for details</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <app-footer></app-footer>
+  </div>
+</div>
+
