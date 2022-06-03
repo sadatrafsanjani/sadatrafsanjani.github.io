@@ -3,12 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from "@angular/common/http";
-import { ReferenceComponent } from './reference/reference.component';
+import {NavigationComponent} from "./template/navigation/navigation.component";
+import {SidebarComponent} from "./template/sidebar/sidebar.component";
+import {FooterComponent} from "./template/footer/footer.component";
 
 @NgModule({
   declarations: [
@@ -16,8 +15,7 @@ import { ReferenceComponent } from './reference/reference.component';
     IndexComponent,
     NavigationComponent,
     SidebarComponent,
-    FooterComponent,
-    ReferenceComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
