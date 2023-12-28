@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "designation": "Senior Software Engineer",
+    "organization": "Brain Station-23",
+    "mode": "On-Site",
+    "url": "https://brainstation-23.com/",
+    "responsibility": [
+      "Feature development & Bug fixing",
+      "Task breakdown & assignment",
+      "Live issue support"
+    ],
+    "technology": "Spring Boot, Spring MVC, ReactJS, jQuery, Javascript, Quartz, Oracle, Kafka, Tomcat, Docker, CI/CD, Jenkins"
+  },
+  {
+    "id": 2,
+    "designation": "Senior Software Engineer (Contractual)",
+    "organization": "RMS Academy",
+    "mode": "Remote",
+    "url": "",
+    "responsibility": [
+      "Core feature development",
+      "Requirement analysis & SRS preparation",
+      "Deployment"
+    ],
+    "technology": "Spring Boot, Angular, PostgreSQL, Kafka"
+  },
+  {
+    "id": 3,
+    "designation": "Senior Software Engineer",
+    "organization": "Square Health Ltd.",
+    "mode": "On-Site",
+    "url": "",
+    "responsibility": [
+      "Full stack development",
+      "Core feature development",
+      "Bug fixing"
+    ],
+    "technology": ""
+  },
+  {
+    "id": 4,
+    "designation": "MTO (Software Engineer)",
+    "organization": "Dutch-Bangla Bank Ltd.",
+    "mode": "On-Site",
+    "url": "https://www.dutchbanglabank.com/",
+    "responsibility": [
+
+    ],
+    "technology": ""
+  },
+  {
+    "id": 5,
+    "designation": "Full Stack Web Developer",
+    "organization": "AOdoubleclick",
+    "mode": "Remote",
+    "url": "https://aodoubleclick.com/",
+    "responsibility": [
+
+    ],
+    "technology": ""
+  },
+  {
+    "id": 6,
+    "designation": "Officer",
+    "organization": "North South University",
+    "mode": "On-Site",
+    "url": "www.northsouth.edu",
+    "responsibility": [
+      "Web application development",
+      ""
+    ],
+    "technology": [
+      "Spring Boot", "Thymeleaf", "MySQL"
+    ]
+  }
+]

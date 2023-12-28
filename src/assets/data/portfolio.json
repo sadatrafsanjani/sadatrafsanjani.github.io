@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "E-Learning System",
-    "url": "Principle Developer",
+    "url": "",
     "technology": "Angular, Bootstrap, Spring Boot, PostgreSQL, Jenkins",
     "role": "Principle Developer",
     "contribution": [
@@ -39,7 +39,7 @@
   {
     "id": 4,
     "title": "Remittance Collection System",
-    "url": "",
+    "url": "https://app.dutchbanglabank.com/remittance_online//checkstatus?",
     "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
     "role": "Full stack",
     "contribution": [
