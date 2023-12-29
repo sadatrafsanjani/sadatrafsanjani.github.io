@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Portfolio} from "../dto/portfolio";
 import {Observable} from "rxjs";
+import {Training} from "../dto/training";
 
 @Injectable({
   providedIn: 'root'
 })
-export class PortfolioService {
+export class TrainingService {
 
-  url = 'assets/data/portfolio.json';
+  url = 'assets/data/training.json';
 
   constructor(private http: HttpClient) { }
 
-  public getPortfolio() : Observable<Portfolio[]> {
-    return this.http.get<Portfolio[]>(this.url);
+  public getTraining() : Observable<Training[]> {
+    return this.http.get<Training[]>(this.url);
   }
 }

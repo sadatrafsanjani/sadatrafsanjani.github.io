@@ -1,8 +1,8 @@
 export interface Experience {
   id: number;
-  title: string;
+  designation: string;
+  organization: string;
+  mode: string;
   url: string;
-  technology: string;
-  role: string;
-  contribution: string;
+  responsibility: [];
 }

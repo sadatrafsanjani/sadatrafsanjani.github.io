@@ -9,14 +9,15 @@
       <div class="container-fluid px-4 py-5">
 
         <div class="row" id="about">
+          <h2 class="mt-2 mb-3 h2">About</h2>
           <div class="col-lg-12">
-            <h2 class="mb-3 h2">About</h2>
             <p class="justify-content-evenly">
               I am a full stack developer interested in enterprise level scalable multi-tenant
               and event-driven microservice system design to evolve as a successful solution
               architect. I have experience in all stages of software development life cycle
               with proven track records.
             </p>
+            <p>Tags: #Java #Fullstack</p>
           </div>
         </div>
 
@@ -28,10 +29,10 @@
                 <span class="fw-bold">Frontend:</span> Angular, ReactJS, JavaScript, HTML, CSS, Bootstrap
               </li>
               <li class="font-monospace">
-                <span class="fw-bold">Backend:</span> Spring (Boot, MVC, JPA, Security, Cloud, Batch), Servlet, J2EE, JSF, JSP
+                <span class="fw-bold">Backend:</span> Spring (Boot, MVC, JPA, Security, Cloud, Batch), Quartz, Servlet, J2EE, JSF, JSP
               </li>
               <li class="font-monospace">
-                <span class="fw-bold">Database:</span> Oracle, PostgreSQL, MySQL, MongoDB, Elastic Search
+                <span class="fw-bold">Database:</span> Oracle, PostgreSQL, MySQL, MongoDB, Elastic Search, Redis
               </li>
               <li class="font-monospace">
                 <span class="fw-bold">AWS:</span> EC2, Athena, Dynamodb, Redshift, Chime, IAM
@@ -54,57 +55,14 @@
 
         <div class="row" id="experience">
           <h2 class="mt-5 mb-3 h2">Experiences</h2>
-          <div class="col-lg-12">
+          <div class="col-lg-12" *ngFor="let experience of experiences">
 
-            <h5 class="text-brown-primary">Senior Software Engineer</h5>
-            <h6 class="text-brown-secondary">Brain Station-23 (June,2022 - Present)</h6>
+            <h5 class="text-brown-primary">{{ experience.designation }}</h5>
+            <h6 class="text-brown-secondary"><a href="{{experience.url}}" class="text-decoration-none" target="_blank">{{ experience.organization }}</a> | ({{ experience.mode}})</h6>
             <p>Responsibilities:</p>
-            <ul class="mb-4">
-              <li>System analysis and Design</li>
-              <li>Back-end and front-end development</li>
+            <ul>
+              <li *ngFor="let responsibility of experience.responsibility">{{ responsibility }}</li>
             </ul>
-
-            <h5 class="text-brown-primary">Senior Software Engineer (Contractual)</h5>
-            <h6 class="text-brown-secondary">RMS Academy (April,2022 - June, 2022)</h6>
-            <p>Responsibilities:</p>
-            <ul class="mb-4">
-              <li>System analysis and Design</li>
-              <li>Back-end and front-end development</li>
-            </ul>
-
-            <h5 class="text-brown-primary">Senior Software Engineer</h5>
-            <h6 class="text-brown-secondary">Square Health (October,2021 - March,2022)</h6>
-            <p>Responsibilities:</p>
-            <ul class="mb-4">
-              <li>Implemented video calling system</li>
-              <li>Back-end and front-end development</li>
-              <li>Deployment</li>
-            </ul>
-
-            <h5 class="text-brown-primary">Software Engineer</h5>
-            <h6 class="text-brown-secondary">Dutch-Bangla Bank Ltd. (February,2020 - October,2021)</h6>
-            <p>Responsibilities:</p>
-            <ul class="mb-4">
-              <li>End-to-End System Design (Database, Web Service and Front-end)</li>
-              <li>Deployment</li>
-            </ul>
-
-            <h5 class="text-brown-primary">Full Stack Web Developer (Remote)</h5>
-            <h6 class="text-brown-secondary">AOdoubleclick (March,2019 - February,2020)</h6>
-            <p>Responsibilities:</p>
-            <ul class="mb-4">
-              <li>Developed Web Services and Recommender System</li>
-              <li>Implemented microservice architecture</li>
-            </ul>
-
-            <h5 class="text-brown-primary">Officer</h5>
-            <h6 class="text-brown-secondary">North South University (September,2016 - March,2019)</h6>
-            <p>Responsibilities:</p>
-            <ul class="mb-4">
-              <li>Web application development</li>
-              <li>Executive IT Trainer</li>
-            </ul>
-
           </div>
         </div>
 
@@ -114,7 +72,7 @@
             <ul class="list-unstyled">
               <li>
                 <h6 class="h6 text-brown-primary">Master in Information Technology |
-                  <span class="text-dark-ash">Dhaka University (Appeared, 2020)</span>
+                  <span class="text-dark-ash">Dhaka University (CGPA: 3.35/4.00, 2020)</span>
                 </h6>
               </li>
               <li>
@@ -141,30 +99,64 @@
           <div class="col-lg-12">
             <ul class="list-unstyled">
               <li *ngFor="let portfolio of portfolios" class="mb-4">
-                <h5 class="h5">{{portfolio.title}}
-                  <a *ngIf="portfolio.url" href="{{portfolio.url}}"><fa-icon [icon]="faLink" class="text-primary"></fa-icon></a>
+                <h5 class="h5 text-brown-primary">{{portfolio.title}}
+                  <a *ngIf="portfolio.url" href="{{portfolio.url}}" target="_blank"><fa-icon [icon]="faLink" class="text-primary"></fa-icon></a>
                 </h5>
+                <h6 class="h6">Contributions:</h6>
                 <ul *ngFor="let work of portfolio.contribution">
                   <li>{{ work }}</li>
                 </ul>
+                <p class="mt-2">Technologies:<span class="mx-1">{{ portfolio.technology }}</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="opensource">
+          <h2 class="mt-5 mb-3">Opensource Contributions</h2>
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li *ngFor="let opensource of opensources" class="mb-4">
+                <h5 class="h5 text-brown-primary">{{opensource.title}}
+                  <a *ngIf="opensource.url" href="{{opensource.url}}" target="_blank"><fa-icon [icon]="faLink" class="text-primary"></fa-icon></a>
+                </h5>
+                <h6 class="h6">Contributions:</h6>
+                <p>{{ opensource.description }}</p>
+                <p class="mt-2">Technologies:<span class="mx-1">{{ opensource.technology }}</span></p>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="row" id="research">
-          <h2 class="mt-5 mb-3">Research and Publication</h2>
+          <h2 class="mt-5 mb-3">Research Publications</h2>
           <div class="col-lg-12">
             <ul class="list-unstyled">
               <li>
-                <h6 class="h6 text-brown-primary">Violent Human Behavior Detection from Videos Using Machine Learning
-                  <span class="text-dark-ash">(Accepted, DUJASE, 2022)</span>
+                <h6 class="h6 text-brown-primary">Automatic Program Repair with Deep Learning
+                  <span class="text-dark-ash">(On-going)</span>
                 </h6>
               </li>
               <li>
-                <h6 class="h6 text-brown-primary">Violent Incident Detection from Videos Using Transfer Learning
-                  <span class="text-dark-ash">(On-going, 97% Accuracy)</span>
+                <h6 class="h6 text-brown-primary">Violent Human Behavior Detection from Videos Using Machine Learning
+                  <span class="text-dark-ash">(DUJASE, 2022)</span>
                 </h6>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row" id="teaching">
+          <h2 class="mt-5 mb-3">Teaching Experiences</h2>
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li *ngFor="let teaching of teachings" class="mb-4">
+                <h4 class="h5 text-brown-primary">{{teaching.role}}</h4>
+                <h5><a href="{{teaching.url}}" target="_blank" class="text-decoration-none">{{teaching.organization}}</a></h5>
+                <h6 class="h6">Topics:</h6>
+                <ul *ngFor="let work of teaching.course">
+                  <li>{{ work }}</li>
+                </ul>
               </li>
             </ul>
           </div>

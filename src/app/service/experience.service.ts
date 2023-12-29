@@ -8,11 +8,11 @@ import {Experience} from "../dto/experience";
 })
 export class ExperienceService {
 
-  portfolioUrl = 'assets/data/experience.json';
+  url = 'assets/data/experience.json';
 
   constructor(private http: HttpClient) { }
 
-  public getPortfolio() : Observable<Experience[]> {
-    return this.http.get<Experience[]>(this.portfolioUrl);
+  public getExperience() : Observable<Experience[]> {
+    return this.http.get<Experience[]>(this.url);
   }
 }

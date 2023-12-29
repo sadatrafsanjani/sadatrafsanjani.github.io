@@ -3,6 +3,7 @@
     "id": 1,
     "title": "CityLive Online Banking",
     "url": "",
+    "users": "",
     "technology": "Spring Boot, Spring Security, Spring Batch, Redis, Jenkins, Docker, Kubernetes",
     "role": "Backend Developer",
     "contribution": [
@@ -21,6 +22,7 @@
     "id": 2,
     "title": "CityLive Batch Transaction Scheduler",
     "url": "",
+    "users": "",
     "technology": "Spring Boot, Oracle, Jenkins, Docker, Kubernetes",
     "role": "Principal Developer",
     "contribution": [
@@ -31,8 +33,9 @@
   },
   {
     "id": 3,
-    "title": "City Bank PLC Real-Time Gross Settlement System",
+    "title": "City Bank PLC Real-Time Gross Settlement System (RTGS)",
     "url": "",
+    "users": "",
     "technology": "Spring Boot, Oracle, Quartz, Tomcat, Docker, Jenkins",
     "role": "Backend Developer",
     "contribution": [
@@ -49,22 +52,61 @@
   {
     "id": 4,
     "title": "UCBL Corporate Banking",
-    "url": "",
-    "technology": "Spring MVC, Spring Security, Maven, Apache Kafka, Tomcat",
-    "role": "Backend Developer",
+    "url": "https://unet.ucb.com.bd/eb/login.html#!",
+    "users": "",
+    "technology": "Bootstrap, Ajax, jQuery, Spring MVC, Spring Security, Maven, Tomcat",
+    "role": "Full stack Developer",
     "contribution": [
-      "Bulk transaction microservice",
       "Session Replication Across Multiple Server Node",
       "SSL Certificate Incorporation",
-      "Code review",
-      "Live issue support",
       "Third-party API integration"
     ]
   },
   {
     "id": 5,
+    "title": "UCBL Bulk Engine",
+    "url": "",
+    "users": "",
+    "technology": "Spring Boot, Maven, Apache Kafka, Akka, Tomcat",
+    "role": "Full stack Developer",
+    "contribution": [
+      "Multi-threaded distributed transaction",
+      "Inclusion of organization name in Apcahe Kafka official site"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "UCBL Retail Banking",
+    "url": "https://unet.ucb.com.bd/login.html#!",
+    "users": "",
+    "technology": "Bootstrap, Ajax, jQuery, Spring MVC, Spring Security, Maven, Tomcat",
+    "role": "Full stack Developer",
+    "contribution": [
+      "FD/DPS system",
+      "OTP Lock/Unlock",
+      "Card Activate/Deactivate",
+      "Customer Email Subscription",
+      "SSL Certificate Incorporation",
+      "Unit/Integration test implementation"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "UCBL Standing Instruction",
+    "url": "",
+    "users": "",
+    "technology": "Bootstrap, jQuery, Ajax, Spring Boot, Quartz, Maven, Tomcat",
+    "role": "Full stack Developer",
+    "contribution": [
+      "Cron expression-based Scheduled transaction",
+      "Frontend UI for live monitoring"
+    ]
+  },
+  {
+    "id": 8,
     "title": "E-Learning System",
     "url": "",
+    "users": "",
     "technology": "Angular, Bootstrap, Spring Boot, PostgreSQL, CI/CD Jenkins",
     "role": "Principle Developer",
     "contribution": [
@@ -74,9 +116,10 @@
     ]
   },
   {
-    "id": 6,
+    "id": 9,
     "title": "JOTNO-Online Healthcare System",
     "url": "https://www.jotno.net/",
+    "users": "",
     "technology": "Angular, Spring Boot, MySQL, Elastic Search, RabbitMQ, AWS, Docker, Jenkins, Firebase",
     "role": "Full stack software engineer",
     "contribution": [
@@ -87,9 +130,10 @@
     ]
   },
   {
-    "id": 7,
+    "id": 10,
     "title": "E-KYC Fraud Detection System",
     "url": "https://play.google.com/store/apps/details?id=com.dbbl.mbs.apps.main",
+    "users": "",
     "technology": "Flask, TensorFlow, Keras, OpenCV, Python, Waitress",
     "role": "Core system developer",
     "contribution": [
@@ -98,20 +142,22 @@
     ]
   },
   {
-    "id": 8,
+    "id": 11,
     "title": "Remittance Collection System",
     "url": "https://app.dutchbanglabank.com/remittance_online//checkstatus?",
+    "users": "",
     "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
-    "role": "Full stack",
+    "role": "Full stack developer",
     "contribution": [
       "Integrated various APIs for online transactions",
-      "Developed front-end application"
+      "Frontend application"
     ]
   },
   {
-    "id": 9,
+    "id": 12,
     "title": "Human Resource Management System",
     "url": "",
+    "users": "",
     "technology": "Angular, Bootstrap, Spring Boot, Oracle, BI Report",
     "role": "Full stack developer",
     "contribution": [
@@ -121,9 +167,10 @@
     ]
   },
   {
-    "id": 10,
+    "id": 13,
     "title": "Payroll Payment Integration (Grameen Phone and Epyllion Group)",
     "url": "",
+    "users": "",
     "technology": "Angular, Bootstrap, Spring Boot, Oracle, Hibernate",
     "role": "Core developer",
     "contribution": [
@@ -132,42 +179,49 @@
     ]
   },
   {
-    "id": 7,
+    "id": 14,
     "title": "Agent Banking ORO Commission Automation System",
     "url": "",
+    "users": "",
     "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
     "role": "Full stack developer",
     "contribution": [
-      "Implemented a fully automated commission system for outlets",
+      "Implemented a fully automated commission system",
       "Designed frontend application"
     ]
   },
   {
-    "id": 8,
+    "id": 15,
     "title": "Problem Management System",
+    "url": "",
+    "users": "",
     "technology": "Angular, Bootstrap, Spring Boot, Oracle, iReport, RabbitMQ",
     "role": "Full stack developer",
     "contribution": [
-      "Designed a three-tier system using JWT",
-      "Developed back-end web services and client frontend",
-      "Designed database"
+      "Conversion from 2-tier to 3-tier system",
+      "JWT/Refresh token based authentication",
+      "Full problem management module",
+      "Reporting"
     ]
   },
   {
-    "id": 11,
+    "id": 16,
     "title": "E-Commerce Store",
     "url": "https://aodoubleclick.com/",
+    "users": "",
     "technology": "Angular, Spring Boot, MySQL, PHP, Python, Apache Kafka",
     "role": "Full stack developer",
     "contribution": [
-      "Implemented product Recommender System",
-      "Developed the product ordering, billing and tracking system"
+      "Recommender System (Content-based and Collaborative)",
+      "Product shopping cart and billing",
+      "Real-time product tracking"
     ]
   },
   {
-    "id": 12,
+    "id": 17,
     "title": "University Management System",
     "url": "www.northsouth.edu",
+    "users": "",
     "technology": "Thymeleaf, Javascript, jQuery, Spring Boot, PostgreSQL",
     "role": "Full stack developer",
     "contribution": [
