@@ -52,7 +52,7 @@
   {
     "id": 4,
     "title": "UCBL Corporate Banking",
-    "url": "",
+    "url": "https://unet.ucb.com.bd/eb/login.html#!",
     "users": "",
     "technology": "Bootstrap, Ajax, jQuery, Spring MVC, Spring Security, Maven, Tomcat",
     "role": "Full stack Developer",
@@ -77,7 +77,7 @@
   {
     "id": 6,
     "title": "UCBL Retail Banking",
-    "url": "",
+    "url": "https://unet.ucb.com.bd/login.html#!",
     "users": "",
     "technology": "Bootstrap, Ajax, jQuery, Spring MVC, Spring Security, Maven, Tomcat",
     "role": "Full stack Developer",
