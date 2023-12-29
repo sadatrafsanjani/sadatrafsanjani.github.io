@@ -3,14 +3,19 @@
     "id": 1,
     "designation": "Senior Software Engineer",
     "organization": "Brain Station-23",
-    "mode": "On-Site",
+    "mode": "On-Site/Client-Site",
     "url": "https://brainstation-23.com/",
     "responsibility": [
-      "Feature development & Bug fixing",
-      "Task breakdown & assignment",
+      "Communicating with stakeholders for requirement gathering",
+      "Requirement analysis and system design",
+      "Core feature development",
+      "Critical bug fix",
+      "Code review",
       "Live issue support"
     ],
-    "technology": "Spring Boot, Spring MVC, ReactJS, jQuery, Javascript, Quartz, Oracle, Kafka, Tomcat, Docker, CI/CD, Jenkins"
+    "technology": [
+      "Spring Boot", "Spring MVC", "ReactJS", "jQuery", "Javascript", "Quartz", "Oracle", "Kafka", "Tomcat", "Docker", "CI/CD", "Jenkins"
+    ]
   },
   {
     "id": 2,
@@ -23,20 +28,23 @@
       "Requirement analysis & SRS preparation",
       "Deployment"
     ],
-    "technology": "Spring Boot, Angular, PostgreSQL, Kafka"
+    "technology": [
+      "Spring Boot", "Angular", "PostgreSQL", "RabbitMQ", "Docker", "CI/CD", "Jenkins"
+    ]
   },
   {
     "id": 3,
     "designation": "Senior Software Engineer",
     "organization": "Square Health Ltd.",
     "mode": "On-Site",
-    "url": "",
+    "url": "https://squarehealth.com.bd/",
     "responsibility": [
       "Full stack development",
-      "Core feature development",
-      "Bug fixing"
+      "Core feature development & Issue fix"
     ],
-    "technology": ""
+    "technology": [
+      "Angular", "Spring Boot", "MySQL", "RabbitMQ", "AWS(Chime, IAM)", "Docker", "CI/CD", "Jenkins"
+    ]
   },
   {
     "id": 4,
@@ -45,9 +53,15 @@
     "mode": "On-Site",
     "url": "https://www.dutchbanglabank.com/",
     "responsibility": [
-
+      "Requirement gathering and SRS preparation",
+      "Feature/CR development",
+      "Testing",
+      "Technical document writing",
+      "Deployment and Live issue support"
     ],
-    "technology": ""
+    "technology": [
+      "Angular", "Spring Boot", "Spring MVC", "JSP", "JSF", "Hibernate", "Tomcat", "Oracle"
+    ]
   },
   {
     "id": 5,
@@ -56,9 +70,12 @@
     "mode": "Remote",
     "url": "https://aodoubleclick.com/",
     "responsibility": [
-
+      "Core feature development",
+      "Bug fixing"
     ],
-    "technology": ""
+    "technology": [
+      "Spring Boot", "Angular", "PHP", "Python", "Apache Kafka"
+    ]
   },
   {
     "id": 6,
@@ -68,10 +85,10 @@
     "url": "www.northsouth.edu",
     "responsibility": [
       "Web application development",
-      ""
+      "Provide tech training"
     ],
     "technology": [
-      "Spring Boot", "Thymeleaf", "MySQL"
+      "Spring Boot", "Thymeleaf", "MySQL", "jQuery"
     ]
   }
 ]

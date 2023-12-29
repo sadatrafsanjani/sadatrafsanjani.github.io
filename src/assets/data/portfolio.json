@@ -1,19 +1,80 @@
 [
   {
     "id": 1,
-    "title": "E-Learning System",
+    "title": "CityLive Online Banking",
     "url": "",
-    "technology": "Angular, Bootstrap, Spring Boot, PostgreSQL, Jenkins",
-    "role": "Principle Developer",
+    "technology": "Spring Boot, Spring Security, Spring Batch, Redis, Jenkins, Docker, Kubernetes",
+    "role": "Backend Developer",
     "contribution": [
-      "Built complete E-Learning solution",
-      "Online code editor",
-      "Video call based on-to-one appointment system",
-      "Database design"
+      "Backoffice microservice",
+      "Direct Debit microservice",
+      "RTGS microservice",
+      "CMO dashboard APIs",
+      "Numerous Search APIs",
+      "Standing instruction system",
+      "Dynamic role-based menu access system",
+      "API access protection",
+      "System Logging"
     ]
   },
   {
     "id": 2,
+    "title": "CityLive Batch Transaction Scheduler",
+    "url": "",
+    "technology": "Spring Boot, Oracle, Jenkins, Docker, Kubernetes",
+    "role": "Principal Developer",
+    "contribution": [
+      "Automated scheduling system",
+      "Fail-safe mechanism",
+      "Cron expression-based job execution"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "City Bank PLC Real-Time Gross Settlement System",
+    "url": "",
+    "technology": "Spring Boot, Oracle, Quartz, Tomcat, Docker, Jenkins",
+    "role": "Backend Developer",
+    "contribution": [
+      "STP/STPG server to communicate with Central Bank",
+      "System Logging",
+      "Inward/Outward transaction scheduler",
+      "Scheduled transaction system (Standing Instruction)",
+      "JWT/Refresh token based authentication",
+      "Dynamic role-based menu access system",
+      "Active user session management system",
+      "Search APIs"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "UCBL Corporate Banking",
+    "url": "",
+    "technology": "Spring MVC, Spring Security, Maven, Apache Kafka, Tomcat",
+    "role": "Backend Developer",
+    "contribution": [
+      "Bulk transaction microservice",
+      "Session Replication Across Multiple Server Node",
+      "SSL Certificate Incorporation",
+      "Code review",
+      "Live issue support",
+      "Third-party API integration"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "E-Learning System",
+    "url": "",
+    "technology": "Angular, Bootstrap, Spring Boot, PostgreSQL, CI/CD Jenkins",
+    "role": "Principle Developer",
+    "contribution": [
+      "E-Learning portal",
+      "Online code editor",
+      "Video call based one-to-one appointment system"
+    ]
+  },
+  {
+    "id": 6,
     "title": "JOTNO-Online Healthcare System",
     "url": "https://www.jotno.net/",
     "technology": "Angular, Spring Boot, MySQL, Elastic Search, RabbitMQ, AWS, Docker, Jenkins, Firebase",
@@ -26,7 +87,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 7,
     "title": "E-KYC Fraud Detection System",
     "url": "https://play.google.com/store/apps/details?id=com.dbbl.mbs.apps.main",
     "technology": "Flask, TensorFlow, Keras, OpenCV, Python, Waitress",
@@ -37,7 +98,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 8,
     "title": "Remittance Collection System",
     "url": "https://app.dutchbanglabank.com/remittance_online//checkstatus?",
     "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
@@ -48,25 +109,25 @@
     ]
   },
   {
-    "id": 5,
+    "id": 9,
     "title": "Human Resource Management System",
     "url": "",
-    "technology": "Angular, SASS, Spring Boot, Oracle, BI Report",
-    "role": "Core developer",
+    "technology": "Angular, Bootstrap, Spring Boot, Oracle, BI Report",
+    "role": "Full stack developer",
     "contribution": [
-      "Worked on the employee information, salary disbursement and performance grading module",
-      "Developed web services for client application",
-      "Designed UIs for consuming web services"
+      "Employee information portal",
+      "Salary disbursement",
+      "Employee performance grading"
     ]
   },
   {
-    "id": 6,
+    "id": 10,
     "title": "Payroll Payment Integration (Grameen Phone and Epyllion Group)",
     "url": "",
     "technology": "Angular, Bootstrap, Spring Boot, Oracle, Hibernate",
     "role": "Core developer",
     "contribution": [
-      "Developed REST APIs for salary disbursement modules",
+      "Salary disbursement modules",
       "Designed frontend application"
     ]
   },
@@ -75,7 +136,7 @@
     "title": "Agent Banking ORO Commission Automation System",
     "url": "",
     "technology": "Angular, SASS, Spring Boot, Oracle, iReport, RabbitMQ",
-    "role": "Back-end developer",
+    "role": "Full stack developer",
     "contribution": [
       "Implemented a fully automated commission system for outlets",
       "Designed frontend application"
@@ -93,32 +154,10 @@
     ]
   },
   {
-    "id": 9,
-    "title": "Cryptocurrency Monitoring System",
-    "url": "https://www.crypto.com",
-    "technology": " Angular, Spring Boot, PostgreSQL",
-    "role": "Back-end developer",
-    "contribution": [
-      "Implemented API authentication system",
-      "Designed database and various REST web services"
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Web Scrapping System",
-    "url": "",
-    "technology": "Java, Groovy, Spring Framework, SQLite",
-    "role": "Core developer",
-    "contribution": [
-      "Implemented an efficient web parsing engine using Regular Expression",
-      "Designed database"
-    ]
-  },
-  {
     "id": 11,
     "title": "E-Commerce Store",
     "url": "https://aodoubleclick.com/",
-    "technology": "Angular, Spring Boot, MySQL",
+    "technology": "Angular, Spring Boot, MySQL, PHP, Python, Apache Kafka",
     "role": "Full stack developer",
     "contribution": [
       "Implemented product Recommender System",
@@ -129,22 +168,12 @@
     "id": 12,
     "title": "University Management System",
     "url": "www.northsouth.edu",
-    "technology": "Thymeleaf, Spring Boot, PostgreSQL",
+    "technology": "Thymeleaf, Javascript, jQuery, Spring Boot, PostgreSQL",
     "role": "Full stack developer",
     "contribution": [
-      "Developed Online Classroom System",
-      "Implemented the E-Recruitment and file storing system"
-    ]
-  },
-  {
-    "id": 13,
-    "title": "Virtual Doctor",
-    "url": "http://www.tauhuky.com/",
-    "technology": "Thymeleaf, Spring Boot, MySQL",
-    "role": "Full stack developer",
-    "contribution": [
-      "Developed the system for Vietnam Client",
-      "Designed database"
+      "Online Classroom System",
+      "E-Recruitment and file",
+      "Digital document (file) storing"
     ]
   }
 ]
