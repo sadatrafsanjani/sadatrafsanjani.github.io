@@ -8,6 +8,9 @@ import {Teaching} from "../dto/teaching";
 import {ExperienceService} from "../service/experience.service";
 import {TeachingService} from "../service/teaching.service";
 import {OpensourceService} from "../service/opensource.service";
+import {faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {Education} from "../dto/education";
+import {EducationService} from "../service/education.service";
 
 @Component({
   selector: 'app-index',
@@ -17,6 +20,7 @@ import {OpensourceService} from "../service/opensource.service";
 export class IndexComponent implements OnInit {
 
   experiences: Array<Experience> = [];
+  educations: Array<Education> = [];
   portfolios: Array<Portfolio> = [];
   opensources: Array<Opensource> = [];
   teachings: Array<Teaching> = [];
@@ -24,17 +28,24 @@ export class IndexComponent implements OnInit {
   faLink = faLink;
 
   constructor(private experienceService: ExperienceService,
+              private educationService: EducationService,
               private portfolioService: PortfolioService,
               private opensourceService: OpensourceService,
               private teachingService: TeachingService) { }
 
   ngOnInit(): void {
+    this.loadEducations();
     this.loadExperiences();
     this.loadPortfolio();
     this.loadOpensource();
     this.loadTeachings();
   }
 
+  private loadEducations(){
+    this.educationService.getEducation().subscribe(response => {
+      this.educations = response;
+    })
+  }
   private loadExperiences(){
     this.experienceService.getExperience().subscribe(response => {
       this.experiences = response;
@@ -59,4 +70,7 @@ export class IndexComponent implements OnInit {
     })
   }
 
+  protected readonly faLinkedin = faLinkedin;
+  protected readonly faGithub = faGithub;
+  protected readonly faYoutube = faYoutube;
 }

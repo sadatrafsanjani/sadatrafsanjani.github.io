@@ -9,15 +9,21 @@
       <div class="container-fluid px-4 py-5">
 
         <div class="row" id="about">
-          <h2 class="mt-5 mb-3 h2">About</h2>
-          <div class="col-lg-12">
-            <p class="justify-content-evenly">
-              I am a full stack developer interested in enterprise level scalable multi-tenant
-              and event-driven microservice system design to evolve as a successful solution
-              architect. I have experience in all stages of software development life cycle
-              with proven track records.
-            </p>
-            <p>Tags: #Java #Fullstack</p>
+          <h2 class="mb-5 h2">About</h2>
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <img src="assets/images/rafsanjani.png" alt="picture" class="img-thumbnail" width="200" style="border-radius: 100px" />
+
+            </div>
+            <div class="col-md-9">
+              <p class="justify-content-evenly">
+                I am a full stack developer interested in enterprise level scalable multi-tenant
+                and event-driven microservice system design to evolve as a successful solution
+                architect. I have experience in all stages of software development life cycle
+                with proven track records.
+              </p>
+              <p>Tags: #Java #Fullstack</p>
+            </div>
           </div>
         </div>
 
@@ -56,7 +62,6 @@
         <div class="row" id="experience">
           <h2 class="mt-5 mb-3 h2">Experiences</h2>
           <div class="col-lg-12" *ngFor="let experience of experiences">
-
             <h5 class="text-brown-primary">{{ experience.designation }}</h5>
             <h6 class="text-brown-secondary"><a href="{{experience.url}}" class="text-decoration-none" target="_blank">{{ experience.organization }}</a> | ({{ experience.mode}})</h6>
             <p>Responsibilities:</p>
@@ -70,25 +75,12 @@
           <h2 class="mt-5 mb-3">Education</h2>
           <div class="col-lg-12">
             <ul class="list-unstyled">
-              <li>
-                <h6 class="h6 text-brown-primary">Master in Information Technology |
-                  <span class="text-dark-ash">Dhaka University (CGPA: 3.35/4.00, 2020)</span>
-                </h6>
-              </li>
-              <li>
-                <h6 class="h6 text-brown-primary">BSc in Computer Science and Engineering |
-                  <span class="text-dark-ash">National University (CGPA: 3.47, 2016)</span>
-                </h6>
-              </li>
-              <li>
-                <h6 class="h6 text-brown-primary">HSC |
-                  <span class="text-dark-ash">St. Joseph Higher Secondary School (CGPA: 4.80, 2010)</span>
-                </h6>
-              </li>
-              <li>
-                <h6 class="h6 text-brown-primary">SSC |
-                  <span class="text-dark-ash">Mirpur Bangla High School (CGPA: 5.00, 2008)</span>
-                </h6>
+              <li *ngFor="let education of educations" class="mb-4">
+                <div *ngIf="education.active">
+                  <h5 class="h6 text-brown-primary">{{education.degree}} <span class="text-dark-ash">({{education.year}})</span></h5>
+                  <h6><a class="text-decoration-none" href="{{education.url}}" target="_blank">{{education.institute}}</a></h6>
+                  <h6>Result: {{education.result}}</h6>
+                </div>
               </li>
             </ul>
           </div>
