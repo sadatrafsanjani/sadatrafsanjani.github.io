@@ -90,7 +90,7 @@
           <h2 class="mt-5 mb-3">Portfolio</h2>
           <div class="col-lg-12">
             <ul class="list-unstyled">
-              <li *ngFor="let portfolio of portfolios" class="mb-4">
+              <li *ngFor="let portfolio of projects" class="mb-4">
                 <h5 class="h5 text-brown-primary">{{portfolio.title}}
                   <a *ngIf="portfolio.url" href="{{portfolio.url}}" target="_blank"><fa-icon [icon]="faLink" class="text-primary"></fa-icon></a>
                 </h5>

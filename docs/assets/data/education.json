@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "degree": "Masters, Information Technology",
+    "institute": "Dhaka University",
+    "year": "2018-2020",
+    "url": "http://www.iit.du.ac.bd",
+    "result": "3.35/4.00",
+    "achievements": [
+      "Research paper publication based on ML",
+      "Class Representative",
+      "Recommender System Implementation",
+      "Intranet Chat Messenger Implementation"
+    ],
+    "active": true
+  },
+  {
+    "id": 2,
+    "degree": "Bachelor, Computer Science & Engineering",
+    "institute": "National University Bangladesh",
+    "year": "2011-2016",
+    "url": "https://www.nu.ac.bd",
+    "result": "3.47/4.00",
+    "achievements": [
+      "Merit Scholarship for academic performance",
+      "Class Representative",
+      "Teaching Assistant for undergrad lab course"
+    ],
+    "active": true
+  },
+  {
+    "id": 3,
+    "degree": "HSC",
+    "institute": "Saint Joseph Higher Secondary School",
+    "year": "2010",
+    "url": "https://sjs.edu.bd/new/index.php",
+    "result": "4.80/5.00",
+    "achievements": [
+      "Speaker & Delegate, International Seminar on Biotechnology, Lucknow, India",
+      "Science Project: Metal Detector",
+      "Science Project: Air Battery"
+    ],
+    "active": true
+  },
+  {
+    "id": 4,
+    "degree": "SSC",
+    "institute": "Mirpur Bangla High School",
+    "year": "2008",
+    "url": "https://mbhss.edu.bd/",
+    "result": "5.00/5.00",
+    "achievements": [
+      "Television Quiz Owner",
+      "Roll Number One Quiz Show Participant"
+    ],
+    "active": true
+  }
+]

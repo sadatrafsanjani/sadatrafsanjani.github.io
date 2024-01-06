@@ -1,4 +1,4 @@
-export interface Portfolio {
+export interface Project {
   id: number;
   title: string;
   url: string;

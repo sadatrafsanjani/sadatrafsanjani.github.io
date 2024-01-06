@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PortfolioService} from "../service/portfolio.service";
-import {Portfolio} from "../dto/portfolio";
+import { Project} from "../dto/project";
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import {Experience} from "../dto/experience";
 import {Opensource} from "../dto/opensource";
@@ -11,6 +10,7 @@ import {OpensourceService} from "../service/opensource.service";
 import {faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Education} from "../dto/education";
 import {EducationService} from "../service/education.service";
+import {ProjectService} from "../service/project.service";
 
 @Component({
   selector: 'app-index',
@@ -21,7 +21,7 @@ export class IndexComponent implements OnInit {
 
   experiences: Array<Experience> = [];
   educations: Array<Education> = [];
-  portfolios: Array<Portfolio> = [];
+  projects: Array<Project> = [];
   opensources: Array<Opensource> = [];
   teachings: Array<Teaching> = [];
 
@@ -29,14 +29,14 @@ export class IndexComponent implements OnInit {
 
   constructor(private experienceService: ExperienceService,
               private educationService: EducationService,
-              private portfolioService: PortfolioService,
+              private projectService: ProjectService,
               private opensourceService: OpensourceService,
               private teachingService: TeachingService) { }
 
   ngOnInit(): void {
     this.loadEducations();
     this.loadExperiences();
-    this.loadPortfolio();
+    this.loadProject();
     this.loadOpensource();
     this.loadTeachings();
   }
@@ -52,9 +52,9 @@ export class IndexComponent implements OnInit {
     })
   }
 
-  private loadPortfolio(){
-    this.portfolioService.getPortfolio().subscribe(response => {
-      this.portfolios = response;
+  private loadProject(){
+    this.projectService.getPortfolio().subscribe(response => {
+      this.projects = response;
     })
   }
 
