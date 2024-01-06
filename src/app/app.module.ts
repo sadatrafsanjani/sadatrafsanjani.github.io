@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {NavigationComponent} from "./template/navigation/navigation.component";
 import {SidebarComponent} from "./template/sidebar/sidebar.component";
 import {FooterComponent} from "./template/footer/footer.component";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {FooterComponent} from "./template/footer/footer.component";
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
