@@ -26,6 +26,9 @@ export class IndexComponent implements OnInit {
   teachings: Array<Teaching> = [];
 
   faLink = faLink;
+  faLinkedin = faLinkedin;
+  faGithub = faGithub;
+  faYoutube = faYoutube;
 
   constructor(private experienceService: ExperienceService,
               private educationService: EducationService,
@@ -69,8 +72,4 @@ export class IndexComponent implements OnInit {
       this.teachings = response;
     })
   }
-
-  protected readonly faLinkedin = faLinkedin;
-  protected readonly faGithub = faGithub;
-  protected readonly faYoutube = faYoutube;
 }
