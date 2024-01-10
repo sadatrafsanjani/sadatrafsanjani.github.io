@@ -7,10 +7,11 @@ import {Teaching} from "../dto/teaching";
 import {ExperienceService} from "../service/experience.service";
 import {TeachingService} from "../service/teaching.service";
 import {OpensourceService} from "../service/opensource.service";
-import {faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faGithubAlt, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Education} from "../dto/education";
 import {EducationService} from "../service/education.service";
 import {ProjectService} from "../service/project.service";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-index',
@@ -30,13 +31,15 @@ export class IndexComponent implements OnInit {
   faGithub = faGithub;
   faYoutube = faYoutube;
 
-  constructor(private experienceService: ExperienceService,
+  constructor(private titleService: Title,
+              private experienceService: ExperienceService,
               private educationService: EducationService,
               private projectService: ProjectService,
               private opensourceService: OpensourceService,
               private teachingService: TeachingService) { }
 
   ngOnInit(): void {
+    this.titleService.setTitle("Home");
     this.loadEducations();
     this.loadExperiences();
     this.loadProject();

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faPerson, faTools, faBuilding, faUniversity, faMicroscope, faCode, faBlackboard } from '@fortawesome/free-solid-svg-icons';
+import { faPerson, faTools, faBuilding, faUniversity, faMicroscope, faCode, faBlackboard, faHome } from '@fortawesome/free-solid-svg-icons';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-sidebar',
@@ -9,6 +10,7 @@ import { faPerson, faTools, faBuilding, faUniversity, faMicroscope, faCode, faBl
 })
 export class SidebarComponent implements OnInit {
 
+  faHome = faHome;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faYoutube = faYoutube;
@@ -20,9 +22,13 @@ export class SidebarComponent implements OnInit {
   faCode = faCode;
   faBlackboard = faBlackboard;
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit(): void {
   }
 
+  isHome(){
+    console.log(this.titleService.getTitle().localeCompare('Home') == 0);
+    return this.titleService.getTitle().localeCompare('Home') == 0;
+  }
 }

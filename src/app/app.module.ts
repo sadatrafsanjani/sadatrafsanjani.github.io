@@ -1,31 +1,25 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {HttpClientModule} from "@angular/common/http";
-import {NavigationComponent} from "./template/navigation/navigation.component";
-import {SidebarComponent} from "./template/sidebar/sidebar.component";
-import {FooterComponent} from "./template/footer/footer.component";
 import {NgOptimizedImage} from "@angular/common";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    NavigationComponent,
-    SidebarComponent,
-    FooterComponent
+    IndexComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
-    HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  exports: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
