@@ -10,6 +10,9 @@ import {BlogService} from "../../service/blog.service";
 })
 export class HomeComponent implements OnInit {
 
+  page = 1;
+  size = 5;
+  totalItems = 0;
   blogs: Array<Blog> = [];
 
   constructor(private titleService: Title,
@@ -21,8 +24,38 @@ export class HomeComponent implements OnInit {
   }
 
   private loadBlogs(){
-    this.blogService.getBlog().subscribe(response => {
-      this.blogs = response;
+
+    const params = this.getRequestParams(this.page, this.size);
+
+    this.blogService.getBlog(params).subscribe((response: any) => {
+      this.blogs = response.body.data;
+      console.log(this.blogs);
+      this.totalItems = response.body.totalItems;
     })
   }
+
+  getRequestParams(page: number, size: number) {
+
+    let params: any = {};
+
+    if (page) {
+      params[`page`] = page;
+    }
+
+    if (size) {
+      params[`size`] = size;
+    }
+
+    return params;
+  }
+
+  handlePageChange(event: number): void {
+    this.page = event;
+    this.loadBlogs();
+  }
+
+  formatDate(date: any){
+    return new Date(date).toISOString().split('T')[0];
+  }
+
 }

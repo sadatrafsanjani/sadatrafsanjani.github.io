@@ -13,8 +13,8 @@ export class BlogService {
 
   constructor(private http: HttpClient) { }
 
-  public getBlog() : Observable<Blog[]> {
-    return this.http.get<Blog[]>(this.url).pipe(retry(1), catchError(this.errorHandler));
+  public getBlog(params: any) : Observable<Blog[]> {
+    return this.http.get<Blog[]>(this.url, {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
   errorHandler(error:any) {

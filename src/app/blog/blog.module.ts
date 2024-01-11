@@ -7,6 +7,7 @@ import {NewBlogComponent} from "./new-blog/new-blog.component";
 import {HomeComponent} from "./home/home.component";
 import {BlogRoutingModule} from "./blog-routing.module";
 import {SharedModule} from "../shared/shared.module";
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {SharedModule} from "../shared/shared.module";
   imports: [
     CommonModule,
     BlogRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxPaginationModule
   ]
 })
 export class BlogModule { }
