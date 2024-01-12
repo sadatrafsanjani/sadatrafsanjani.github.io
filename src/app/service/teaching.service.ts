@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Teaching} from "../dto/teaching";
+import {Teaching} from "../dto/response/teaching";
 import {environment} from "../../environments/environment";
 
 @Injectable({

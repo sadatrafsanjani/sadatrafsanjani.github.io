@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {Blog} from "../../dto/blog";
+import {Blog} from "../../dto/response/blog";
 import {BlogService} from "../../service/blog.service";
 
 @Component({
@@ -27,9 +27,8 @@ export class HomeComponent implements OnInit {
 
     const params = this.getRequestParams(this.page, this.size);
 
-    this.blogService.getBlog(params).subscribe((response: any) => {
+    this.blogService.getBlogs(params).subscribe((response: any) => {
       this.blogs = response.body.data;
-      console.log(this.blogs);
       this.totalItems = response.body.totalItems;
     })
   }

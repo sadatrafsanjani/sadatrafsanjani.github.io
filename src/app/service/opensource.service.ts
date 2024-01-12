@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Opensource} from "../dto/opensource";
+import {Opensource} from "../dto/response/opensource";
 import {environment} from "../../environments/environment";
 
 @Injectable({

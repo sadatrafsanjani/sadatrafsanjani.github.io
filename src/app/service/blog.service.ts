@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Blog} from "../dto/blog";
+import {Blog} from "../dto/response/blog";
+import {BlogRequest} from "../dto/request/blogRequest";
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,7 @@ export class BlogService {
 
   constructor(private http: HttpClient) { }
 
-  public getBlog(params: any) : Observable<Blog[]> {
+  public getBlogs(params: any) : Observable<Blog[]> {
     return this.http.get<Blog[]>(this.url, {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
@@ -25,13 +26,17 @@ export class BlogService {
     return this.http.get<Blog>(this.url + '/admin/' + id).pipe(retry(1), catchError(this.errorHandler));
   }
 
+  public postBlog(payload: BlogRequest) {
+
+    return this.http.post<Blog>(this.url + '/admin/' , payload, {responseType: 'json'}).pipe(retry(1), catchError(this.errorHandler));
+  }
+
   errorHandler(error:any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
-
       errorMessage = error.error.message;
-    } else {
-
+    }
+    else{
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
     }
     console.log(errorMessage);

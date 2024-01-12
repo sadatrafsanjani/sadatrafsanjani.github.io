@@ -28,7 +28,6 @@ export class SidebarComponent implements OnInit {
   }
 
   isHome(){
-    console.log(this.titleService.getTitle().localeCompare('Home') == 0);
     return this.titleService.getTitle().localeCompare('Home') == 0;
   }
 }

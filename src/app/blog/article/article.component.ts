@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {ActivatedRoute} from "@angular/router";
 import {BlogService} from "../../service/blog.service";
-import {Blog} from "../../dto/blog";
+import {Blog} from "../../dto/response/blog";
 
 @Component({
   selector: 'app-article',
@@ -26,8 +26,12 @@ export class ArticleComponent implements OnInit {
   private getByArticleByLink(link: string){
 
     this.blogService.getBlogByLink(link).subscribe((response: any) => {
+
       this.article = response.body;
-      this.titleService.setTitle(this.article.title);
+
+      if(this.article.title !== undefined){
+        this.titleService.setTitle(this.article.title);
+      }
     });
   }
 

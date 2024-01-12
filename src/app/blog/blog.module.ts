@@ -8,6 +8,7 @@ import {HomeComponent} from "./home/home.component";
 import {BlogRoutingModule} from "./blog-routing.module";
 import {SharedModule} from "../shared/shared.module";
 import {NgxPaginationModule} from "ngx-pagination";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {NgxPaginationModule} from "ngx-pagination";
     CommonModule,
     BlogRoutingModule,
     SharedModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ReactiveFormsModule
   ]
 })
 export class BlogModule { }

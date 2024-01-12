@@ -1,9 +1,7 @@
-export interface Blog {
-  _id: string;
+export interface BlogRequest {
   title: string;
   link: string;
   category: string;
   description: string;
-  status: string;
-  date: string;
+  status: boolean;
 }
