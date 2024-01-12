@@ -8,7 +8,7 @@ import {EditBlogComponent} from "./edit-blog/edit-blog.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'article:/link', component: ArticleComponent },
+  { path: 'article/:link', component: ArticleComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'new-blog', component: NewBlogComponent },
   { path: 'edit-blog', component: EditBlogComponent }

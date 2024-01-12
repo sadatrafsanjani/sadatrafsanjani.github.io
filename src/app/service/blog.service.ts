@@ -17,6 +17,14 @@ export class BlogService {
     return this.http.get<Blog[]>(this.url, {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
+  public getBlogByLink(link: string) : Observable<Blog> {
+    return this.http.get<Blog>(this.url + '/' + link).pipe(retry(1), catchError(this.errorHandler));
+  }
+
+  public getBlogById(id: string) : Observable<Blog> {
+    return this.http.get<Blog>(this.url + '/admin/' + id).pipe(retry(1), catchError(this.errorHandler));
+  }
+
   errorHandler(error:any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
