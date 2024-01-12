@@ -18,6 +18,10 @@ export class BlogService {
     return this.http.get<Blog[]>(this.url, {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
+  public getAllBlogs(params: any) : Observable<Blog[]> {
+    return this.http.get<Blog[]>(this.url + '/admin', {params}).pipe(retry(1), catchError(this.errorHandler));
+  }
+
   public getBlogByLink(link: string) : Observable<Blog> {
     return this.http.get<Blog>(this.url + '/' + link).pipe(retry(1), catchError(this.errorHandler));
   }
@@ -29,6 +33,16 @@ export class BlogService {
   public postBlog(payload: BlogRequest) {
 
     return this.http.post<Blog>(this.url + '/admin/' , payload, {responseType: 'json'}).pipe(retry(1), catchError(this.errorHandler));
+  }
+
+  public updateBlog(id: string, payload: BlogRequest) {
+
+    return this.http.put<Blog>(this.url + '/admin/' +  id, payload, {responseType: 'json'}).pipe(retry(1), catchError(this.errorHandler));
+  }
+
+  public deleteBlog(id: string) {
+
+    return this.http.delete<Blog>(this.url + '/admin/' +  id, {responseType: 'json'}).pipe(retry(1), catchError(this.errorHandler));
   }
 
   errorHandler(error:any) {
