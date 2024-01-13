@@ -7,4 +7,18 @@
   <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
     <fa-icon [icon]="faNavicon"></fa-icon>
   </button>
+
+  <div *ngIf="isLoggedIn()" class="dropdown float-end">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown link
+    </a>
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><button class="dropdown-item" (click)="logout()">Logout</button></li>
+    </ul>
+  </div>
+
 </nav>

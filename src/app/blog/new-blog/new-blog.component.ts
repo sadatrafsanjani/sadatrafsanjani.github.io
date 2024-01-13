@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {BlogRequest} from "../../dto/request/blogRequest";
+import {BlogRequest} from "../../dto/request/BlogRequest";
 import {BlogService} from "../../service/blog.service";
 import {Router} from "@angular/router";
 

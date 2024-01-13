@@ -3,7 +3,7 @@ import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
 import {Blog} from "../dto/response/blog";
-import {BlogRequest} from "../dto/request/blogRequest";
+import {BlogRequest} from "../dto/request/BlogRequest";
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +32,7 @@ export class BlogService {
 
   public postBlog(payload: BlogRequest) {
 
-    return this.http.post<Blog>(this.url + '/admin/' , payload, {responseType: 'json'}).pipe(retry(1), catchError(this.errorHandler));
+    return this.http.post<Blog>(this.url + '/admin' , payload, {responseType: 'json'}).pipe(retry(1), catchError(this.errorHandler));
   }
 
   public updateBlog(id: string, payload: BlogRequest) {
