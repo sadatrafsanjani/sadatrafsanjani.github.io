@@ -58,5 +58,18 @@ export class DashboardComponent implements OnInit {
     return new Date(date).toISOString().split('T')[0];
   }
 
+  activateBlog(id: string){
 
+    console.log("");
+  }
+
+  deactivateBlog(id: string){
+
+    console.log("");
+  }
+
+  deleteBlog(id: string){
+
+    console.log("");
+  }
 }

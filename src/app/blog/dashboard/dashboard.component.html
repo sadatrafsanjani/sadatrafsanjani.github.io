@@ -17,19 +17,27 @@
                   <th scope="row">Title</th>
                   <th scope="row">Status</th>
                   <th scope="row">Created On</th>
-                  <th scope="row">Action</th>
+                  <th scope="row">Manage</th>
+                  <th scope="row">Show/Hide</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let blog of blogs | paginate: { itemsPerPage: size, currentPage: page, totalItems: totalItems }; let i = index">
                   <td>#{{ i+1 }}</td>
-                  <td>{{ blog.title }}</td>
+                  <td><a class="text-decoration-none" target="_blank" routerLink="/blog/article/{{ blog.link }}">{{ blog.title }}</a></td>
                   <td>
                     <span *ngIf="blog.status" class="text-success">Active</span>
                     <span *ngIf="!blog.status" class="text-danger">Inactive</span>
                   </td>
-                  <td>{{blog.date}}</td>
-                  <td><button class="btn"></button></td>
+                  <td>{{ formatDate(blog.date) }}</td>
+                  <td>
+                    <a class="btn btn-outline-success" target="_blank" routerLink="/blog/edit-blog/{{ blog._id }}">Edit</a> &nbsp;
+                    <button class="btn btn-outline-danger" (click)="deleteBlog(blog._id)">Delete</button>
+                  </td>
+                  <td>
+                    <button *ngIf="!blog.status" class="btn btn-success" (click)="activateBlog(blog._id)">Activate</button> &nbsp;
+                    <button *ngIf="blog.status" class="btn btn-danger" (click)="deactivateBlog(blog._id)">Deactivate</button> &nbsp;
+                  </td>
                 </tr>
               </tbody>
             </table>

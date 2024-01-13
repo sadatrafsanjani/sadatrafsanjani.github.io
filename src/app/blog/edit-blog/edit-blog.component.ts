@@ -30,7 +30,7 @@ export class EditBlogComponent  implements OnInit {
     }
 
     this.route.params.subscribe(params => {
-      this.getByArticleById(params[`id`]);
+      this.getArticleById(params[`id`]);
     });
   }
 
@@ -80,17 +80,20 @@ export class EditBlogComponent  implements OnInit {
     });
   }
 
-  private getByArticleById(id: string){
+  private getArticleById(id: string){
 
     this.blogService.getBlogById(id).subscribe((response: any) => {
 
       this.article = response.body;
+
+      console.log(this.article);
 
       if(this.article !== undefined){
 
         this.blogForm.setValue({
           title: this.article.title,
           link: this.article.link,
+          category: this.article.category,
           description: this.article.description,
           status: this.article.status
         });
