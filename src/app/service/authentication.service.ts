@@ -20,6 +20,11 @@ export class AuthenticationService {
     return this.storageService.getItem("username");
   }
 
+  public getAccessToken(){
+
+    return this.storageService.getItem("accessToken");
+  }
+
   public isLoggedIn(){
 
     return this.storageService.getItem("username") != null || this.storageService.getItem("username") != undefined;

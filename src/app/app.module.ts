@@ -8,6 +8,7 @@ import {SharedModule} from "./shared/shared.module";
 import {LoginComponent} from "./login/login.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgxWebstorageModule} from "ngx-webstorage";
+import {JWTInterceptor, JWTProvider} from "./interceptor/JWTInterceptor";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {NgxWebstorageModule} from "ngx-webstorage";
     ReactiveFormsModule,
     NgxWebstorageModule.forRoot()
   ],
-  providers: [],
+  providers: [JWTProvider],
   exports: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
