@@ -9,63 +9,74 @@
           About
         </a>
         <div class="collapse" id="background">
-          <div class="col-md-12">
-            <a class="nav-link border-bottom border-top" href="#about">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faPerson" class="text-info"></fa-icon></div>
-              About Me
-            </a>
-            <a class="nav-link border-bottom" href="#skill">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faTools" class="text-info"></fa-icon></div>
-              Skills
-            </a>
-            <a class="nav-link border-bottom" href="#experience">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faBuilding" class="text-info"></fa-icon></div>
-              Experience
-            </a>
-            <a class="nav-link border-bottom" href="#education">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faUniversity" class="text-info" size="1x"></fa-icon></div>
-              Education
-            </a>
-            <a class="nav-link border-bottom" href="#portfolio">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faCode" class="text-info" size="1x"></fa-icon></div>
-              Portfolio
-            </a>
-            <a class="nav-link border-bottom" href="#opensource">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faGithub" class="text-info" size="1x"></fa-icon></div>
-              Open-source
-            </a>
-            <a class="nav-link border-bottom" href="#research">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faMicroscope" class="text-info" size="1x"></fa-icon></div>
-              Research
-            </a>
-            <a class="nav-link border-bottom" href="#teaching">
-              <div class="sb-nav-link-icon"><fa-icon [icon]="faBlackboard" class="text-info" size="1x"></fa-icon></div>
-              Teaching
-            </a>
-          </div>
+          <a class="nav-link border-bottom" href="#about">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faPerson" class="text-info"></fa-icon></div>
+            About Me
+          </a>
+          <a class="nav-link border-bottom" href="#skill">
+            <div class="sb-nav-link-icon  ms-3"><fa-icon [icon]="faTools" class="text-info"></fa-icon></div>
+            Skills
+          </a>
+          <a class="nav-link border-bottom" href="#experience">
+            <div class="sb-nav-link-icon  ms-3"><fa-icon [icon]="faBuilding" class="text-info"></fa-icon></div>
+            Experience
+          </a>
+          <a class="nav-link border-bottom" href="#education">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faUniversity" class="text-info" size="1x"></fa-icon></div>
+            Education
+          </a>
+          <a class="nav-link border-bottom" href="#portfolio">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faCode" class="text-info" size="1x"></fa-icon></div>
+            Portfolio
+          </a>
+          <a class="nav-link border-bottom" href="#opensource">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faGithub" class="text-info" size="1x"></fa-icon></div>
+            Open-source
+          </a>
+          <a class="nav-link border-bottom" href="#research">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faMicroscope" class="text-info" size="1x"></fa-icon></div>
+            Research
+          </a>
+          <a class="nav-link border-bottom" href="#teaching">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faBlackboard" class="text-info" size="1x"></fa-icon></div>
+            Teaching
+          </a>
         </div>
         <a class="nav-link border-bottom text-light" routerLink="/blog">
+          <div class="sb-nav-link-icon"><fa-icon [icon]="faBlog" class="text-info" size="1x"></fa-icon></div>
           Blog
         </a>
       </div>
 
-      <div *ngIf="!isHome()" class="nav">
+      <div *ngIf="!isHome() && !isAuthenticated()" class="nav">
         <a class="nav-link border-bottom" routerLink="/">
           <div class="sb-nav-link-icon"><fa-icon [icon]="faHome" class="text-info" size="1x"></fa-icon></div>
           Home
         </a>
-        <a class="nav-link border-bottom" routerLink="/blog/dashboard">
-          <div class="sb-nav-link-icon"><fa-icon [icon]="faHome" class="text-info" size="1x"></fa-icon></div>
-          Dashboard
-        </a>
         <a class="nav-link border-bottom" routerLink="/blog">
-          <div class="sb-nav-link-icon"><fa-icon [icon]="faHome" class="text-info" size="1x"></fa-icon></div>
+          <div class="sb-nav-link-icon"><fa-icon [icon]="faBlog" class="text-info" size="1x"></fa-icon></div>
           Blog
         </a>
-        <a class="nav-link border-bottom" routerLink="/blog/new-blog">
-          <div class="sb-nav-link-icon"><fa-icon [icon]="faHome" class="text-info" size="1x"></fa-icon></div>
-          New Blog
+      </div>
+
+      <div *ngIf="!isHome() && isAuthenticated()" class="nav">
+        <a class="nav-link border-bottom" routerLink="/blog/dashboard">
+          <div class="sb-nav-link-icon"><fa-icon [icon]="faGauge" class="text-info" size="1x"></fa-icon></div>
+          Dashboard
         </a>
+        <a class="nav-link border-bottom text-light" data-bs-toggle="collapse" href="#blog" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Blog
+        </a>
+        <div class="collapse" id="blog">
+          <a class="nav-link border-bottom" routerLink="/blog/list">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faBlog" class="text-info" size="1x"></fa-icon></div>
+            List
+          </a>
+          <a class="nav-link border-bottom" routerLink="/blog/new-blog">
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faPlus" class="text-info" size="1x"></fa-icon></div>
+            New
+          </a>
+        </div>
       </div>
 
     </div>

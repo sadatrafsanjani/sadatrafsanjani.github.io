@@ -22,12 +22,33 @@ export class AuthenticationService {
 
   public getAccessToken(){
 
-    return this.storageService.getItem("accessToken");
+    const token = this.storageService.getItem("accessToken");
+
+    if((token != null) && (token != undefined)){
+      return token;
+    }
+
+    return null;
   }
 
   public isLoggedIn(){
 
-    return this.storageService.getItem("username") != null || this.storageService.getItem("username") != undefined;
+    const token = this.getAccessToken();
+
+    if(token != null){
+
+      const payload = {
+        token: token
+      };
+
+      return this.http.post(this.url + '/isAuthenticated', payload, {observe: 'response'}).pipe(map ((response : any) => {
+
+          return response.status == 200;
+
+      })).pipe(retry(1), catchError(this.errorHandler));
+    }
+
+    return false;
   }
 
   public login(payload: LoginRequest) : Observable<LoginResponse> {

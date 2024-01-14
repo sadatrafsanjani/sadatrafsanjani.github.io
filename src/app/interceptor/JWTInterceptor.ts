@@ -19,20 +19,14 @@ export class JWTInterceptor implements HttpInterceptor {
 
     if (accessToken != null) {
 
-      request = this.addAccessToken(request, accessToken);
-
+      request = request.clone({
+        setHeaders: {
+          Authorization: `Heat ${accessToken}`
+        }
+      })
     }
 
     return next.handle(request);
-  }
-
-  private addAccessToken(request: HttpRequest<any>, token: string): any {
-
-    return request.clone({
-      setHeaders: {
-        Authorization: `Heat ${token}`
-      }
-    });
   }
 }
 

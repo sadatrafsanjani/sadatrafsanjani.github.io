@@ -9,6 +9,7 @@ import {LoginComponent} from "./login/login.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgxWebstorageModule} from "ngx-webstorage";
 import {JWTInterceptor, JWTProvider} from "./interceptor/JWTInterceptor";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [

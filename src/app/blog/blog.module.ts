@@ -9,6 +9,7 @@ import {BlogRoutingModule} from "./blog-routing.module";
 import {SharedModule} from "../shared/shared.module";
 import {NgxPaginationModule} from "ngx-pagination";
 import {ReactiveFormsModule} from "@angular/forms";
+import {ListComponent} from "./list/list.component";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     ArticleComponent,
     EditBlogComponent,
     NewBlogComponent,
-    HomeComponent
+    HomeComponent,
+    ListComponent
   ],
   imports: [
     CommonModule,
