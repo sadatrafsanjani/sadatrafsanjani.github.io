@@ -1,6 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faPerson, faTools, faBuilding, faUniversity, faMicroscope, faCode, faBlackboard } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPerson,
+  faTools,
+  faBuilding,
+  faUniversity,
+  faMicroscope,
+  faCode,
+  faBlackboard,
+  faHome,
+  faBlog,
+  faGauge,
+  faPlus,
+  faArrowRight,
+  faLink
+} from '@fortawesome/free-solid-svg-icons';
+import {Title} from "@angular/platform-browser";
+import {AuthenticationService} from "../../service/authentication.service";
 
 @Component({
   selector: 'app-sidebar',
@@ -9,6 +25,7 @@ import { faPerson, faTools, faBuilding, faUniversity, faMicroscope, faCode, faBl
 })
 export class SidebarComponent implements OnInit {
 
+  faHome = faHome;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faYoutube = faYoutube;
@@ -20,9 +37,24 @@ export class SidebarComponent implements OnInit {
   faCode = faCode;
   faBlackboard = faBlackboard;
 
-  constructor() { }
+  faArrowRight = faArrowRight;
+  faBlog = faBlog;
+  faGauge = faGauge;
+  faPlus = faPlus;
+
+  constructor(private titleService: Title,
+              private authenticationService: AuthenticationService) { }
 
   ngOnInit(): void {
   }
 
+  isHome(){
+    return this.titleService.getTitle().localeCompare('Home') == 0;
+  }
+
+  isAuthenticated(){
+    return this.authenticationService.isLoggedIn();
+  }
+
+  protected readonly faLink = faLink;
 }

@@ -1,0 +1,54 @@
+<div class="container">
+
+  <div class="row justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h1 class="text-center">Login</h1>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="username" class="form-label fw-bold">Username</label>
+                <input type="text"
+                       id="username"
+                       name="username"
+                       formControlName="username"
+                       class="form-control"
+                       aria-describedby="usernameHelp"
+                       placeholder="Username"
+                       required />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="password" class="form-label fw-bold">Password</label> &nbsp;
+                <input type="password"
+                       id="password"
+                       name="password"
+                       formControlName="password"
+                       class="form-control"
+                       aria-describedby="passwordHelp"
+                       placeholder="Password"
+                       required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-success w-25">Login</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>

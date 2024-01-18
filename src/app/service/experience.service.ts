@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, retry, throwError} from "rxjs";
-import {Experience} from "../dto/experience";
+import {Experience} from "../dto/response/experience";
 import {environment} from "../../environments/environment";
 
 @Injectable({

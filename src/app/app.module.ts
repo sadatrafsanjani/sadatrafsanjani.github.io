@@ -1,31 +1,38 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
-import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import {HttpClientModule} from "@angular/common/http";
-import {NavigationComponent} from "./template/navigation/navigation.component";
-import {SidebarComponent} from "./template/sidebar/sidebar.component";
-import {FooterComponent} from "./template/footer/footer.component";
 import {NgOptimizedImage} from "@angular/common";
+import {SharedModule} from "./shared/shared.module";
+import {LoginComponent} from "./login/login.component";
+import {ReactiveFormsModule} from "@angular/forms";
+import {NgxWebstorageModule} from "ngx-webstorage";
+import {JWTInterceptor, JWTProvider} from "./interceptor/JWTInterceptor";
+import {HttpClientModule} from "@angular/common/http";
+import {NgxSpinnerModule} from "ngx-spinner";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    NavigationComponent,
-    SidebarComponent,
-    FooterComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
-    HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    SharedModule,
+    ReactiveFormsModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
+    NgxWebstorageModule.forRoot(),
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [JWTProvider],
+  exports: [],
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

@@ -1,10 +1,29 @@
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark border-bottom">
-  <!-- Navbar Brand-->
-  <a class="navbar-brand ps-3" href="">
-    <span class="text-golden">Sadat</span><span class="text-blue">Rafsanjani</span>
-  </a>
-  <!-- Sidebar Toggle-->
-  <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
-    <fa-icon [icon]="faNavicon"></fa-icon>
-  </button>
+
+  <div class="col-md-10">
+    <!-- Navbar Brand-->
+    <a class="navbar-brand ps-3" href="">
+      <span class="text-golden">Sadat</span><span class="text-blue">Rafsanjani</span>
+    </a>
+    <!-- Sidebar Toggle-->
+    <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+      <fa-icon [icon]="faNavicon"></fa-icon>
+    </button>
+  </div>
+
+  <div class="col-md-2">
+    <div *ngIf="isLoggedIn()" class="dropdown text-md-center">
+      <a class="dropdown-toggle text-decoration-none text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {{ getUsername() }}
+      </a>
+
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><button class="dropdown-item" (click)="logout()">Logout</button></li>
+      </ul>
+    </div>
+  </div>
+
 </nav>
