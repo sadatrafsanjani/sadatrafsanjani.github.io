@@ -1,6 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faPerson, faTools, faBuilding, faUniversity, faMicroscope, faCode, faBlackboard, faHome, faBlog, faGauge, faPlus, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPerson,
+  faTools,
+  faBuilding,
+  faUniversity,
+  faMicroscope,
+  faCode,
+  faBlackboard,
+  faHome,
+  faBlog,
+  faGauge,
+  faPlus,
+  faArrowRight,
+  faLink
+} from '@fortawesome/free-solid-svg-icons';
 import {Title} from "@angular/platform-browser";
 import {AuthenticationService} from "../../service/authentication.service";
 
@@ -41,4 +55,6 @@ export class SidebarComponent implements OnInit {
   isAuthenticated(){
     return this.authenticationService.isLoggedIn();
   }
+
+  protected readonly faLink = faLink;
 }

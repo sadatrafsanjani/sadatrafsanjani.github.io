@@ -10,6 +10,7 @@ import {SharedModule} from "../shared/shared.module";
 import {NgxPaginationModule} from "ngx-pagination";
 import {ReactiveFormsModule} from "@angular/forms";
 import {ListComponent} from "./list/list.component";
+import {NgxSpinnerModule} from "ngx-spinner";
 
 
 @NgModule({
@@ -21,12 +22,12 @@ import {ListComponent} from "./list/list.component";
     HomeComponent,
     ListComponent
   ],
-  imports: [
-    CommonModule,
-    BlogRoutingModule,
-    SharedModule,
-    NgxPaginationModule,
-    ReactiveFormsModule
-  ]
+    imports: [
+        CommonModule,
+        BlogRoutingModule,
+        SharedModule,
+        NgxPaginationModule,
+        NgxSpinnerModule
+    ]
 })
 export class BlogModule { }

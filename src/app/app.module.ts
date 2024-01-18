@@ -10,6 +10,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {NgxWebstorageModule} from "ngx-webstorage";
 import {JWTInterceptor, JWTProvider} from "./interceptor/JWTInterceptor";
 import {HttpClientModule} from "@angular/common/http";
+import {NgxSpinnerModule} from "ngx-spinner";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import {HttpClientModule} from "@angular/common/http";
     NgOptimizedImage,
     SharedModule,
     ReactiveFormsModule,
-    NgxWebstorageModule.forRoot()
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
+    NgxWebstorageModule.forRoot(),
+    NgxSpinnerModule.forRoot({ type: 'ball-scale-multiple' })
   ],
   providers: [JWTProvider],
   exports: [],

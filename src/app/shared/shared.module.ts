@@ -7,10 +7,25 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {HttpClientModule} from "@angular/common/http";
 import {RouterLink} from "@angular/router";
 import {NgxPaginationModule} from "ngx-pagination";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
-  imports: [CommonModule, FontAwesomeModule, HttpClientModule, RouterLink, NgxPaginationModule],
+  imports: [
+    CommonModule,
+    FontAwesomeModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    RouterLink,
+    NgxPaginationModule],
   declarations: [ NavigationComponent, SidebarComponent, FooterComponent ],
-  exports:      [ NavigationComponent, SidebarComponent, FooterComponent ]
+  exports:      [
+    NavigationComponent,
+    SidebarComponent,
+    FooterComponent,
+    FontAwesomeModule,
+    HttpClientModule,
+    RouterLink,
+    ReactiveFormsModule,
+    NgxPaginationModule ]
 })
 export class SharedModule { }

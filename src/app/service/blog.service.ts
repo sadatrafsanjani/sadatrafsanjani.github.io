@@ -19,7 +19,7 @@ export class BlogService {
   }
 
   public getAllBlogs(params: any) : Observable<Blog[]> {
-    return this.http.get<Blog[]>(this.url + '/admin', {params}).pipe(retry(1), catchError(this.errorHandler));
+    return this.http.get<Blog[]>(this.url + '/admin/getAll', {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
   public getBlogByLink(link: string) : Observable<Blog> {

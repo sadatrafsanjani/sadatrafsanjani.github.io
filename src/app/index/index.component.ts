@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Project} from "../dto/response/project";
-import { faLink } from '@fortawesome/free-solid-svg-icons';
 import {Experience} from "../dto/response/experience";
 import {Opensource} from "../dto/response/opensource";
 import {Teaching} from "../dto/response/teaching";
 import {ExperienceService} from "../service/experience.service";
 import {TeachingService} from "../service/teaching.service";
 import {OpensourceService} from "../service/opensource.service";
-import {faGithub, faGithubAlt, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import {Education} from "../dto/response/education";
 import {EducationService} from "../service/education.service";
 import {ProjectService} from "../service/project.service";
@@ -26,10 +26,10 @@ export class IndexComponent implements OnInit {
   opensources: Array<Opensource> = [];
   teachings: Array<Teaching> = [];
 
-  faLink = faLink;
   faLinkedin = faLinkedin;
   faGithub = faGithub;
   faYoutube = faYoutube;
+  faLink = faLink;
 
   constructor(private titleService: Title,
               private experienceService: ExperienceService,

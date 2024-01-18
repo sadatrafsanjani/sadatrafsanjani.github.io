@@ -4,6 +4,7 @@ import {Title} from "@angular/platform-browser";
 import {Router} from "@angular/router";
 import {LoginRequest} from "../dto/request/LoginRequest";
 import {AuthenticationService} from "../service/authentication.service";
+import {NgxSpinnerService} from "ngx-spinner";
 
 @Component({
   selector: 'app-login',
@@ -17,6 +18,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private titleService: Title,
               private router: Router,
+              private spinner: NgxSpinnerService,
               private authenticationService: AuthenticationService) {
     this.loginRequest = {
       username: '',
@@ -53,12 +55,16 @@ export class LoginComponent implements OnInit {
 
   onSubmit(){
 
+    this.spinner.show();
+
     this.loginRequest.username = this.username?.value;
     this.loginRequest.password = this.password?.value;
 
     this.authenticationService.login(this.loginRequest).subscribe((response : any) => {
 
       this.router.navigateByUrl('/blog/dashboard');
+
+      this.spinner.hide();
     });
   }
 

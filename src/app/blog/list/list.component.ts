@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Blog} from "../../dto/response/blog";
 import {Title} from "@angular/platform-browser";
 import {BlogService} from "../../service/blog.service";
+import { NgxSpinnerService } from "ngx-spinner";
 
 @Component({
   selector: 'app-list',
@@ -16,7 +17,8 @@ export class ListComponent implements OnInit {
   blogs: Array<Blog> = [];
 
   constructor(private titleService: Title,
-              private blogService: BlogService) { }
+              private blogService: BlogService,
+              private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     this.titleService.setTitle("Dashboard");
@@ -25,12 +27,15 @@ export class ListComponent implements OnInit {
 
   private loadBlogs(){
 
+    this.spinner.show();
+
     const params = this.getRequestParams(this.page, this.size);
 
     this.blogService.getAllBlogs(params).subscribe((response: any) => {
       this.blogs = response.body.data;
       this.totalItems = response.body.totalItems;
-    })
+      this.spinner.hide();
+    });
   }
 
   getRequestParams(page: number, size: number) {
