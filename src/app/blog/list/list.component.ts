@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Blog} from "../../dto/response/blog";
+import {BlogResponse} from "../../dto/response/BlogResponse";
 import {Title} from "@angular/platform-browser";
 import {BlogService} from "../../service/blog.service";
 import { NgxSpinnerService } from "ngx-spinner";
@@ -14,7 +14,7 @@ export class ListComponent implements OnInit {
   page = 1;
   size = 5;
   totalItems = 0;
-  blogs: Array<Blog> = [];
+  blogs: Array<BlogResponse> = [];
 
   constructor(private titleService: Title,
               private blogService: BlogService,

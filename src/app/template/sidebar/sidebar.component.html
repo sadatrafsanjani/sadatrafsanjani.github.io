@@ -6,7 +6,7 @@
 
       <div *ngIf="isHome()" class="nav">
         <a class="nav-link border-bottom text-light" data-bs-toggle="collapse" href="#background" role="button" aria-expanded="false" aria-controls="collapseExample">
-          <div class="sb-nav-link-icon"><fa-icon [icon]="faPerson" class="text-primary"></fa-icon></div>
+          <div class="sb-nav-link-icon"><fa-icon [icon]="faPerson" class="text-info"></fa-icon></div>
           About
         </a>
         <div class="collapse" id="background">
@@ -66,11 +66,12 @@
           Dashboard
         </a>
         <a class="nav-link border-bottom text-light" data-bs-toggle="collapse" href="#blog" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="sb-nav-link-icon"><fa-icon [icon]="faBlog" class="text-info" size="1x"></fa-icon></div>
           Blog
         </a>
         <div class="collapse" id="blog">
           <a class="nav-link border-bottom" routerLink="/blog/list">
-            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faBlog" class="text-info" size="1x"></fa-icon></div>
+            <div class="sb-nav-link-icon ms-3"><fa-icon [icon]="faList" class="text-info" size="1x"></fa-icon></div>
             List
           </a>
           <a class="nav-link border-bottom" routerLink="/blog/new-blog">

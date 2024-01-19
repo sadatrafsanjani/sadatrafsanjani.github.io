@@ -4,6 +4,8 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {BlogRequest} from "../../dto/request/BlogRequest";
 import {BlogService} from "../../service/blog.service";
 import {Router} from "@angular/router";
+import {CategoryResponse} from "../../dto/response/CategoryResponse";
+import {CategoryService} from "../../service/category.service";
 
 @Component({
   selector: 'app-new-blog',
@@ -12,11 +14,13 @@ import {Router} from "@angular/router";
 })
 export class NewBlogComponent implements OnInit {
 
+  categories!: CategoryResponse[];
   blogForm!: FormGroup;
   blogRequest!: BlogRequest;
 
   constructor(private titleService: Title,
               private router: Router,
+              private categoryService: CategoryService,
               private blogService: BlogService) {
     this.blogRequest = {
       title: '',
@@ -29,15 +33,24 @@ export class NewBlogComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.titleService.setTitle("New Blog");
+    this.titleService.setTitle("New BlogResponse");
 
     this.blogForm = new FormGroup({
+
       title: new FormControl('', [Validators.required, Validators.minLength(10)]),
       link: new FormControl('', [Validators.required]),
       category: new FormControl('', [Validators.required, Validators.minLength(5)]),
       description: new FormControl('', [Validators.required]),
       status: new FormControl(true, [Validators.required])
     });
+
+    this.getCategories();
+  }
+
+  private getCategories(){
+    this.categoryService.getCategories().subscribe((response: any) => {
+      this.categories = response.body;
+    })
   }
 
   get title() {
@@ -67,8 +80,6 @@ export class NewBlogComponent implements OnInit {
     this.blogRequest.category = this.category?.value;
     this.blogRequest.description = this.description?.value;
     this.blogRequest.status = this.status?.value;
-
-    console.log(this.blogRequest);
 
     this.blogService.postBlog(this.blogRequest).subscribe((response : any) => {
       this.router.navigateByUrl('/blog/article/' + response.body.link);

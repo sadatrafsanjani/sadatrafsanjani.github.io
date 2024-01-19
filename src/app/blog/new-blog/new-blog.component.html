@@ -12,7 +12,7 @@
 
           <div class="col-lg-12">
 
-            <h2 class="h2 mb-5 text-darky">New Blog</h2>
+            <h2 class="h2 mb-5 text-dark">New Blog</h2>
 
             <form [formGroup]="blogForm" (ngSubmit)="onSubmit()">
 
@@ -30,14 +30,15 @@
                 </div>
                 <div class="col-md-4">
                   <label for="category" class="form-label fw-bold">Category</label> &nbsp;
-                  <input type="text"
-                         id="category"
-                         name="category"
-                         formControlName="category"
-                         class="form-control"
-                         aria-describedby="categoryHelp"
-                         placeholder="Article category"
-                         required />
+                  <select formControlName="category"
+                          name="category"
+                          id="category"
+                          class="form-control">
+                    <option selected value="" disabled>-SELECT-</option>
+                    <option *ngFor="let category of categories" [value]="category._id">
+                      {{ category.name }}
+                    </option>
+                  </select>
                 </div>
               </div>
 
@@ -49,7 +50,6 @@
                             formControlName="description"
                             class="form-control"></textarea>
                 </div>
-
               </div>
 
               <div class="row mb-3">

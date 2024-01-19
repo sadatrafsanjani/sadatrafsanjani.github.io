@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import {ActivatedRoute} from "@angular/router";
 import {BlogService} from "../../service/blog.service";
-import {Blog} from "../../dto/response/blog";
+import {BlogResponse} from "../../dto/response/BlogResponse";
 
 @Component({
   selector: 'app-article',
@@ -11,7 +11,7 @@ import {Blog} from "../../dto/response/blog";
 })
 export class ArticleComponent implements OnInit {
 
-  article!: Blog;
+  article!: BlogResponse;
   constructor(private titleService: Title,
               private blogService: BlogService,
               private route: ActivatedRoute) { }

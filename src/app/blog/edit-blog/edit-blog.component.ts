@@ -4,7 +4,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {BlogRequest} from "../../dto/request/BlogRequest";
 import {ActivatedRoute, Router} from "@angular/router";
 import {BlogService} from "../../service/blog.service";
-import {Blog} from "../../dto/response/blog";
+import {BlogResponse} from "../../dto/response/BlogResponse";
 
 @Component({
   selector: 'app-edit-blog',
@@ -13,7 +13,7 @@ import {Blog} from "../../dto/response/blog";
 })
 export class EditBlogComponent  implements OnInit {
 
-  article!: Blog;
+  article!: BlogResponse;
   blogForm!: FormGroup;
   blogRequest!: BlogRequest;
 

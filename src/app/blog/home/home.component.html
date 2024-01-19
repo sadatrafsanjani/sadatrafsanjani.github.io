@@ -9,7 +9,9 @@
       <div class="container-fluid px-4 py-5">
         <div class="row justify-content-center">
           <div class="col-md-10" *ngFor="let blog of blogs | paginate: { itemsPerPage: size, currentPage: page, totalItems: totalItems }">
-            <h6 class="h6 mt-3 text-success">{{ blog.category }}</h6>
+            <h6 class="h6 mt-3 text-success">
+              <a class="text-decoration-none text-success" routerLink="/blog/category/{{blog.category.link}}">{{ blog.category.name }}</a>
+            </h6>
             <h2 class="h2">{{ blog.title }}</h2>
             <h2 class="h5 mt-3"><span class="font-monospace">Rafsanjani</span><small class="mx-3 text-dark small-text">{{formatDate(blog.date)}}</small></h2>
             <p class="mt-2 mb-5">
@@ -35,3 +37,4 @@
     <app-footer></app-footer>
   </div>
 </div>
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>

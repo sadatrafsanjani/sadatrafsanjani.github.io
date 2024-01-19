@@ -13,7 +13,9 @@ import {
   faGauge,
   faPlus,
   faArrowRight,
-  faLink
+  faLink,
+  faBook,
+  faList
 } from '@fortawesome/free-solid-svg-icons';
 import {Title} from "@angular/platform-browser";
 import {AuthenticationService} from "../../service/authentication.service";
@@ -38,6 +40,8 @@ export class SidebarComponent implements OnInit {
   faBlackboard = faBlackboard;
 
   faArrowRight = faArrowRight;
+  faBook = faBook;
+  faList = faList;
   faBlog = faBlog;
   faGauge = faGauge;
   faPlus = faPlus;

@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {Blog} from "../../dto/response/blog";
+import {BlogResponse} from "../../dto/response/BlogResponse";
 import {BlogService} from "../../service/blog.service";
+import {NgxSpinnerService} from "ngx-spinner";
 
 @Component({
   selector: 'app-home',
@@ -13,10 +14,11 @@ export class HomeComponent implements OnInit {
   page = 1;
   size = 5;
   totalItems = 0;
-  blogs: Array<Blog> = [];
+  blogs: Array<BlogResponse> = [];
 
   constructor(private titleService: Title,
-              private blogService: BlogService) { }
+              private blogService: BlogService,
+              private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
     this.titleService.setTitle("Blog");
@@ -25,12 +27,16 @@ export class HomeComponent implements OnInit {
 
   private loadBlogs(){
 
+    this.spinner.show();
+
     const params = this.getRequestParams(this.page, this.size);
 
     this.blogService.getBlogs(params).subscribe((response: any) => {
       this.blogs = response.body.data;
       this.totalItems = response.body.totalItems;
-    })
+    });
+
+    this.spinner.hide();
   }
 
   getRequestParams(page: number, size: number) {
