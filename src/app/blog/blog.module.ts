@@ -11,6 +11,7 @@ import {NgxPaginationModule} from "ngx-pagination";
 import {ReactiveFormsModule} from "@angular/forms";
 import {ListComponent} from "./list/list.component";
 import {NgxSpinnerModule} from "ngx-spinner";
+import {CategoryComponent} from "./category/category.component";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {NgxSpinnerModule} from "ngx-spinner";
     EditBlogComponent,
     NewBlogComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    CategoryComponent
   ],
     imports: [
         CommonModule,

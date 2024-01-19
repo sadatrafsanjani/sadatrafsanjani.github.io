@@ -7,10 +7,12 @@ import {ArticleComponent} from "./article/article.component";
 import {EditBlogComponent} from "./edit-blog/edit-blog.component";
 import {AuthenticationGuard} from "../guard/authentication.guard";
 import {ListComponent} from "./list/list.component";
+import {CategoryComponent} from "./category/category.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'article/:link', component: ArticleComponent },
+  { path: 'category/:type', component: CategoryComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthenticationGuard] },
   { path: 'list', component: ListComponent, canActivate: [AuthenticationGuard] },
   { path: 'new-blog', component: NewBlogComponent, canActivate: [AuthenticationGuard] },

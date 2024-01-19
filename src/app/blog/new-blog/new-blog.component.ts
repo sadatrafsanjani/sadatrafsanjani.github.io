@@ -33,7 +33,7 @@ export class NewBlogComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.titleService.setTitle("New BlogResponse");
+    this.titleService.setTitle("New Blog");
 
     this.blogForm = new FormGroup({
 
