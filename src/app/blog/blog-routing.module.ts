@@ -12,7 +12,7 @@ import {CategoryComponent} from "./category/category.component";
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'article/:link', component: ArticleComponent },
-  { path: 'category/:type', component: CategoryComponent},
+  { path: 'category/:link', component: CategoryComponent},
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthenticationGuard] },
   { path: 'list', component: ListComponent, canActivate: [AuthenticationGuard] },
   { path: 'new-blog', component: NewBlogComponent, canActivate: [AuthenticationGuard] },

@@ -16,7 +16,7 @@ export class CategoryComponent implements OnInit {
   size = 5;
   totalItems = 0;
   blogs: Array<BlogResponse> = [];
-  type!:string;
+  link!:string;
 
   constructor(private titleService: Title,
               private blogService: BlogService,
@@ -28,18 +28,18 @@ export class CategoryComponent implements OnInit {
     this.titleService.setTitle("Category");
 
     this.route.params.subscribe(params => {
-      this.type = params[`type`];
-      this.loadBlogs(params[`type`]);
+      this.link = params[`link`];
+      this.loadBlogs(params[`link`]);
     });
   }
 
-  private loadBlogs(type: string){
+  private loadBlogs(link: string){
 
     this.spinner.show();
 
     const params = this.getRequestParams(this.page, this.size);
 
-    this.blogService.getBlogsByCategory(type, params).subscribe((response: any) => {
+    this.blogService.getBlogsByCategory(link, params).subscribe((response: any) => {
       this.blogs = response.body.data;
       this.totalItems = response.body.totalItems;
     });
@@ -64,7 +64,7 @@ export class CategoryComponent implements OnInit {
 
   handlePageChange(event: number): void {
     this.page = event;
-    this.loadBlogs(this.type);
+    this.loadBlogs(this.link);
   }
 
   formatDate(date: any){

@@ -18,8 +18,8 @@ export class BlogService {
     return this.http.get<BlogResponse[]>(this.url, {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
-  public getBlogsByCategory(type: string, params: any) : Observable<BlogResponse[]> {
-    return this.http.get<BlogResponse[]>(this.url + '/' + type, {params}).pipe(retry(1), catchError(this.errorHandler));
+  public getBlogsByCategory(link: string, params: any) : Observable<BlogResponse[]> {
+    return this.http.get<BlogResponse[]>(this.url + '/category/' + link, {params}).pipe(retry(1), catchError(this.errorHandler));
   }
 
   public getAllBlogs(params: any) : Observable<BlogResponse[]> {
