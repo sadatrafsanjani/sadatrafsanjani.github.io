@@ -8,42 +8,38 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
   "private": true,
+  "packageManager": "npm@10.8.2",
   "dependencies": {
-    "@angular/animations": "^17.0.8",
-    "@angular/common": "^17.0.8",
-    "@angular/compiler": "^17.0.8",
-    "@angular/core": "^17.0.8",
-    "@angular/forms": "^17.0.8",
-    "@angular/platform-browser": "^17.0.8",
-    "@angular/platform-browser-dynamic": "^17.0.8",
-    "@angular/router": "^17.0.8",
-    "@fortawesome/angular-fontawesome": "^0.10.2",
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "^5.3.2",
-    "jquery": "^3.6.0",
-    "ngx-pagination": "^6.0.3",
-    "ngx-spinner": "^16.0.2",
-    "ngx-webstorage": "^13.0.1",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "@angular/common": "^21.1.0",
+    "@angular/compiler": "^21.1.0",
+    "@angular/core": "^21.1.0",
+    "@angular/forms": "^21.1.0",
+    "@angular/platform-browser": "^21.1.0",
+    "@angular/router": "^21.1.0",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.9",
-    "@angular/cli": "^17.0.9",
-    "@angular/compiler-cli": "^17.0.8",
-    "@types/jasmine": "~3.10.0",
-    "@types/node": "^12.11.1",
-    "jasmine-core": "~4.0.0",
-    "karma": "~6.3.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.1.0",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~5.2.2"
+    "@angular/build": "^21.1.4",
+    "@angular/cli": "^21.1.4",
+    "@angular/compiler-cli": "^21.1.0",
+    "jsdom": "^27.1.0",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
   }
 }
