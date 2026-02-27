@@ -1,0 +1,12 @@
+<div class="row">
+  <h6 class="h6">RESEARCH</h6><hr />
+  <div class="col-xl-12">
+    <p>
+      @for (research of researches; track $index) {
+        <div>
+          <span class="fw-bold">{{ research.title }}</span>, {{ research.publication }} | {{ research.year }}
+        </div>
+      }
+    </p>
+  </div>
+</div>

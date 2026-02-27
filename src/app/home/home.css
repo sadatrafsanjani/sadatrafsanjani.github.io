@@ -1,18 +1,3 @@
-a:link, a:visited {
-  color: #0b5ed7;
-  text-decoration: none;
-}
-
-.lastName {
-  color: #0a53be;
-}
-
-.contact {
-  margin: 0;
-  padding: 0;
-}
-
 h6 {
   color: #0a53be;
 }
-

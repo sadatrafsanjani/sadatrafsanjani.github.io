@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xl-12 text-center mb-4">
+    <h3 class="h3 mt-3">{{ personalInfo.first_name }} <span class="lastName">{{ personalInfo.last_name }}</span></h3>
+    <p class="contact"><i class="bi bi bi-envelope" aria-hidden="true"></i> {{ personalInfo.email }} | <i
+      class="bi bi-github"></i>&nbsp;<a [href]=personalInfo.github target="_blank">{{ personalInfo.github }}</a>
+    </p>
+    <p class="contact"><i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.linkedin target="_blank">{{ personalInfo.linkedin }}</a></p>
+    <p class="contact">{{ personalInfo.relocation }} | {{ personalInfo.location }} | {{ personalInfo.timezone }}</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-12">
+    <p>
+      {{ personalInfo.summary }}
+    </p>
+  </div>
+</div>

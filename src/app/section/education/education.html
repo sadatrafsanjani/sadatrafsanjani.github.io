@@ -1,0 +1,14 @@
+<div class="row">
+  <h6 class="h6">EDUCATION</h6><hr />
+  <div class="col-xl-12">
+
+    @for (education of educations; track $index) {
+
+      <div>
+        <span class="fw-bolder">{{ education.institution }}</span> | Class of {{ education.graduation_year }}<br />
+        <p><span class="fw-bold">{{ education.degree }}</span></p>
+      </div>
+    }
+
+  </div>
+</div>

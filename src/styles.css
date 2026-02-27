@@ -1,0 +1,8 @@
+a:link, a:visited {
+  color: #0b5ed7;
+  text-decoration: none;
+}
+
+.row > h6 {
+  color: #0a53be;
+}
