@@ -4,7 +4,7 @@
     <p>
       @for (os of opensources; track $index) {
         <div>
-          <span class="fw-bold">{{ os.name }}</span> – {{ os.description }} | {{ os.stars }} Stars
+          <span class="fw-bold">{{ os.name }}</span> – {{ os.description }} | {{ os.stars }} <i class="bi bi-star-fill" aria-hidden="true"></i> | <a [href]="os.url" target="_blank">Link</a>
         </div>
       }
     </p>

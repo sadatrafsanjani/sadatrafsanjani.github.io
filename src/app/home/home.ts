@@ -5,7 +5,7 @@ import {Footer} from '../template/footer/footer';
 import {Sidebar} from '../template/sidebar/sidebar';
 import {DataService} from '../service/data-service';
 import {PersonalInfo} from '../section/personal-info/personal-info';
-import {Skill} from '../skill/skill';
+import {Skill} from '../section/skill/skill';
 import {Opensource} from '../section/opensource/opensource';
 import {Experience} from '../section/experience/experience';
 import {Education} from '../section/education/education';

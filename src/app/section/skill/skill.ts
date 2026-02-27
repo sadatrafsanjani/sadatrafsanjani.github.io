@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {SkillsDTO} from '../dto/skills.dto';
+import {SkillsDTO} from '../../dto/skills.dto';
 
 @Component({
   selector: 'app-skill',

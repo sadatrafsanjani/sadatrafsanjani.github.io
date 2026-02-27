@@ -2,14 +2,14 @@
   "personal_info": {
     "first_name": "Sadat",
     "last_name": "Rafsanjani",
-    "email": "sadatrafsanjani@gmail.com",
+    "email": "sadatrafsanjani at gmail.com",
     "github": "https://github.com/sadatrafsanjani",
     "linkedin": "https://www.linkedin.com/in/sadatrafsanjani",
     "relocation": "Open to Relocation (Company Sponsor Needed)",
     "location": "Remote-Ready",
     "timezone": "GMT+6",
-    "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance,multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software."
-
+    "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
+    "research_interest": "Deep Learning, Natural Language Processing, Generative AI"
   },
 
   "skills": {
@@ -24,254 +24,259 @@
   },
 
   "experience": [
-    [
-      {
-        "title": "Senior Software Developer",
-        "company": "Law Firm",
-        "employment_type": "Remote",
-        "tenure": "February, 2024 - Present",
-        "projects": [
-          {
-            "name": "My Legal Software",
-            "type": "Multi-tenant Legal Practice Management SaaS",
-            "url": "https://mylegalsoftware.com",
-            "technologies": ["Spring Boot", "React", "Tailwind", "Kafka", "Redis", "Elasticsearch", "Docker", "Kubernetes", "MySQL"],
-            "role": "Technical Lead",
-            "team_size": 15,
-            "development_duration": 18,
-            "status": "Production",
-            "highlights": [
-              "Redesigned monolithic system to event-driven microservices based platform serving 20+ law firms",
-              "Implemented real-time chat system handling 50K+ messages daily using WebSocket",
-              "Reduced system response time by 50% through Redis caching and Elasticsearch integration",
-              "Retry based distributed mailer service implementation with FTL email template design",
-              "Quartz based scheduler system implementation for scheduled mail/news/events",
-              "Developed cross-platform desktop application for website access",
-              "Streamlined the deployment process introducing Docker, Kubernetes and Jenkins",
-              "Integration of Microsoft, Google, DocuSign, Zoom, Dialpad, Quickbook API",
-              "Peer code review, critical bug fixing, incident investigation and code optimization",
-              "Comprehensive documentation on system design"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Senior Software Engineer (Level-III)",
-        "company": "Brain Station 23 PLC.",
-        "employment_type": "",
-        "tenure": "June, 2022 - February, 2024",
-        "projects": [
-          {
-            "name": "Real Time Gross Settlement",
-            "type": "Inter-Bank Fund Transfer System",
-            "url": "",
-            "technologies": ["Spring Boot", "Bootstrap", "React", "Tailwind", "Oracle", "Quartz", "Docker", "Kubernetes", "Redis"],
-            "role": "Lead Engineer",
-            "team_size": 12,
-            "development_duration": 12,
-            "status": "Production",
-            "highlights": [
-              "Converted legacy system to modern 3-tier architecture",
-              "JWT/Refresh token-based authentication",
-              "Dynamic role-based menu access system",
-              "Active user session management system",
-              "Implemented STP/STPG server to communicate with Central Bank",
-              "Email configuration and mailing System implementation",
-              "Inward/Outward transaction scheduler implementation",
-              "Built scheduled transaction system handling 10K+ daily automated fund transfers",
-              "Regularly reviewing codes for other developers"
-            ]
-          },
-          {
-            "name": "CityLive",
-            "type": "Corporate Banking Platform for City Bank PLC",
-            "url": "https://www.citytouch.com.bd/CityBank/login",
-            "technologies": ["Spring Boot", "Bootstrap", "Akka", "Oracle", "Kafka", "Tomcat"],
-            "role": "Technical Lead",
-            "team_size": 12,
-            "development_duration": 4,
-            "status": "Production",
-            "highlights": [
-              "Third-party mobile banking API integration",
-              "Implemented bulk transaction microservice capable of handling 1M+ transactions at a time",
-              "Session replication across multiple server node for load balancing",
-              "SSL Certificate Incorporation",
-              "Unit/Integration test implementation"
-            ]
-          },
-          {
-            "name": "UNET",
-            "type": "Retail Banking Platform for City Bank PLC",
-            "url": "https://ibank.thecitybank.com",
-            "technologies": ["Spring Boot", "Oracle", "Tomcat"],
-            "role": "Technical Lead",
-            "team_size": 12,
-            "development_duration": 8,
-            "status": "Production",
-            "highlights": [
-              "FD/DPS system API implementation",
-              "OTP Lock/Unlock implementation",
-              "Card Activate/Deactivate feature development",
-              "Customer email subscription and push notification implementation",
-              "SSL Certificate Incorporation",
-              "Implemented bulk transaction microservice capable of handling 1M+ transactions at a time",
-              "Unit/Integration test implementation"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Co-Founder & Senior Software Engineer",
-        "company": "RMS Academy",
-        "employment_type": "",
-        "tenure": "April, 2022 - June, 2022",
-        "projects": [
-          {
-            "name": "RMS Academy BD",
-            "type": "E-learning Platform",
-            "url": "",
-            "technologies": ["Spring Boot", "Angular", "PostgreSQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
-            "role": "Technical Lead",
-            "team_size": 12,
-            "development_duration": 3,
-            "status": "",
-            "highlights": [
-              "Built an E-learning 3-Tier system completely from scratch",
-              "System design and infrastructure maintenance",
-              "Responsible for server maintenance and deployment"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Senior Software Engineer",
-        "company": "Square Health Pvt. Ltd.",
-        "employment_type": "Contract",
-        "tenure": "October, 2021 - March, 2022",
-        "projects": [
-          {
-            "name": "JOTNO",
-            "type": "Telemedicine Consultation System",
-            "url": "https://jotno.net",
-            "technologies": ["Spring Boot", "Angular", "MySQL", "AWS", "NGINX"],
-            "role": "Full-stack Developer",
-            "team_size": 6,
-            "development_duration": 6,
-            "status": "",
-            "highlights": [
-              "Implemented a full-fledged video call-based consultation system enabling 1000+ daily consultations",
-              "Developed efficient doctor search portal with specialty/location filtering, increasing bookings by 50%",
-              "Regular bug fixing and feature development, mentoring junior programmers"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Software Engineer (MTO)",
-        "company": "Dutch-Bangla Bank PLC",
-        "employment_type": "",
-        "tenure": "March, 2020 - October, 2021",
-        "projects": [
-          {
-            "name": "E-KYC Fraud Detection System",
-            "type": "AI-powered Identity Verification",
-            "url": "",
-            "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "Flask", "Waitress"],
-            "role": "ML Engineer",
-            "team_size": 1,
-            "development_duration": 6,
-            "status": "",
-            "highlights": [
-              "Built complete ML pipeline from data collection, custom dataset preparation to production deployment",
-              "Designed and trained CNN-based fraud detection model using 100K+ labeled images",
-              "Reduced manual review time by 90% while maintaining 99.2% accuracy",
-              "Impact: 99% E-KYC fraud reduction"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Software Engineer",
-        "company": "Service Engine",
-        "employment_type": "",
-        "tenure": "",
-        "projects": [
-          {
-            "name": "Web Scrapping System",
-            "type": "Scrapper",
-            "url": "",
-            "technologies": ["Java", "Threading", "Regular Expression", "Groovy", "SQLite"],
-            "role": "Developer",
-            "team_size": 6,
-            "development_duration": 6,
-            "status": "Production",
-            "highlights": [
-              "Developed a custom web scrapping engine to efficiently parse any website or resource",
-              "Implemented an efficient multi-threaded scrapper able to use groovy scripts",
-              "Database schema design to store scrapped data"
-            ]
-          },
-          {
-            "name": "SWIFT Message Parser",
-            "type": "Automation",
-            "url": "",
-            "technologies": ["Python", "SQLite"],
-            "role": "Developer",
-            "team_size": 6,
-            "development_duration": 6,
-            "status": "",
-            "highlights": [
-              "Developed a SWIFT message parsing system",
-              "Introduced automation a Govt. bank eliminating manual processing costs"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Full Stack Web Developer",
-        "company": "AODoubleClick",
-        "employment_type": "Freelancer",
-        "tenure": "",
-        "projects": [
-          {
-            "name": "AODoubleclick Inc.",
-            "type": "E-Commerce Website",
-            "url": "",
-            "technologies": ["Spring Boot", "MySQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
-            "role": "Full Stack",
-            "team_size": 4,
-            "development_duration": 3,
-            "status": "",
-            "highlights": [
-              "Implemented recommender system (content-based and collaborative filtering), boosting sales by 30%",
-              "Feature/API development and third part API integration"
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Officer",
-        "company": "North South University",
-        "employment_type": "",
-        "tenure": "",
-        "projects": [
-          {
-            "name": "",
-            "type": "",
-            "url": "",
-            "technologies": ["Java", "JavaFX", "MySQL", "SQLite"],
-            "role": "",
-            "team_size": 0,
-            "development_duration": 0,
-            "status": "",
-            "highlights": [
-              "Worked in the in-house software development",
-              "Taught undergrad lab courses (Java, C, C++, Data Structure, Algorithm)"
-            ]
-          }
-        ]
-      }
-    ]
+    {
+      "title": "Senior Software Developer",
+      "company": "Law Firm",
+      "website": "https://gehilaw.com",
+      "employment_type": "Remote",
+      "tenure": "February, 2024 - Present",
+      "projects": [
+        {
+          "name": "My Legal Software",
+          "type": "Multi-tenant Legal Practice Management SaaS",
+          "url": "https://mylegalsoftware.com",
+          "technologies": ["Spring Boot", "React", "Tailwind", "Kafka", "Redis", "Elasticsearch", "Docker", "Kubernetes", "MySQL"],
+          "role": "Technical Lead",
+          "team_size": 15,
+          "development_duration": 18,
+          "status": "Production",
+          "highlights": [
+            "Redesigned monolithic system to event-driven microservices based platform serving 20+ law firms",
+            "Implemented real-time chat system handling 50K+ messages daily using WebSocket",
+            "Reduced system response time by 50% through Redis caching and Elasticsearch integration",
+            "Retry based distributed mailer service implementation with FTL email template design",
+            "Quartz based scheduler system implementation for scheduled mail/news/events",
+            "Developed cross-platform desktop application for website access",
+            "Streamlined the deployment process introducing Docker, Kubernetes and Jenkins",
+            "Integration of Microsoft, Google, DocuSign, Zoom, Dialpad, Quickbook API",
+            "Peer code review, critical bug fixing, incident investigation and code optimization",
+            "Comprehensive documentation on system design"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Senior Software Engineer (Level-III)",
+      "company": "Brain Station 23 PLC.",
+      "website": "https://brainstation-23.com",
+      "employment_type": "On-Site",
+      "tenure": "June, 2022 - February, 2024",
+      "projects": [
+        {
+          "name": "Real Time Gross Settlement",
+          "type": "Inter-Bank Fund Transfer System",
+          "url": "",
+          "technologies": ["Spring Boot", "Bootstrap", "React", "Tailwind", "Oracle", "Quartz", "Docker", "Kubernetes", "Redis"],
+          "role": "Lead Engineer",
+          "team_size": 12,
+          "development_duration": 12,
+          "status": "Production",
+          "highlights": [
+            "Converted legacy system to modern 3-tier architecture",
+            "JWT/Refresh token-based authentication",
+            "Dynamic role-based menu access system",
+            "Active user session management system",
+            "Implemented STP/STPG server to communicate with Central Bank",
+            "Email configuration and mailing System implementation",
+            "Inward/Outward transaction scheduler implementation",
+            "Built scheduled transaction system handling 10K+ daily automated fund transfers",
+            "Regularly reviewing codes for other developers"
+          ]
+        },
+        {
+          "name": "CityLive",
+          "type": "Corporate Banking Platform for City Bank PLC",
+          "url": "https://www.citytouch.com.bd/CityBank/login",
+          "technologies": ["Spring Boot", "Bootstrap", "Akka", "Oracle", "Kafka", "Tomcat"],
+          "role": "Technical Lead",
+          "team_size": 12,
+          "development_duration": 4,
+          "status": "Production",
+          "highlights": [
+            "Third-party mobile banking API integration",
+            "Implemented bulk transaction microservice capable of handling 1M+ transactions at a time",
+            "Session replication across multiple server node for load balancing",
+            "SSL Certificate Incorporation",
+            "Unit/Integration test implementation"
+          ]
+        },
+        {
+          "name": "UNET",
+          "type": "Retail Banking Platform for City Bank PLC",
+          "url": "https://ibank.thecitybank.com",
+          "technologies": ["Spring Boot", "Oracle", "Tomcat"],
+          "role": "Technical Lead",
+          "team_size": 12,
+          "development_duration": 8,
+          "status": "Production",
+          "highlights": [
+            "FD/DPS system API implementation",
+            "OTP Lock/Unlock implementation",
+            "Card Activate/Deactivate feature development",
+            "Customer email subscription and push notification implementation",
+            "SSL Certificate Incorporation",
+            "Implemented bulk transaction microservice capable of handling 1M+ transactions at a time",
+            "Unit/Integration test implementation"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Co-Founder & Senior Software Engineer",
+      "company": "RMS Academy",
+      "website": "",
+      "employment_type": "",
+      "tenure": "April, 2022 - June, 2022",
+      "projects": [
+        {
+          "name": "RMS Academy BD",
+          "type": "E-learning Platform",
+          "url": "",
+          "technologies": ["Spring Boot", "Angular", "PostgreSQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
+          "role": "Technical Lead",
+          "team_size": 12,
+          "development_duration": 3,
+          "status": "Down",
+          "highlights": [
+            "Built an E-learning 3-Tier system completely from scratch",
+            "System design and infrastructure maintenance",
+            "Responsible for server maintenance and deployment"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Square Health Pvt. Ltd.",
+      "website": "https://squarehealth.com.bd",
+      "employment_type": "Contract",
+      "tenure": "October, 2021 - March, 2022",
+      "projects": [
+        {
+          "name": "JOTNO",
+          "type": "Telemedicine Consultation System",
+          "url": "https://jotno.net",
+          "technologies": ["Spring Boot", "Angular", "MySQL", "AWS", "NGINX"],
+          "role": "Full-stack Developer",
+          "team_size": 6,
+          "development_duration": 6,
+          "status": "Production",
+          "highlights": [
+            "Implemented a full-fledged video call-based consultation system enabling 1000+ daily consultations",
+            "Developed efficient doctor search portal with specialty/location filtering, increasing bookings by 50%",
+            "Regular bug fixing and feature development, mentoring junior programmers"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Software Engineer (MTO)",
+      "company": "Dutch-Bangla Bank PLC",
+      "website": "https://www.dutchbanglabank.com",
+      "employment_type": "On-Site",
+      "tenure": "March, 2020 - October, 2021",
+      "projects": [
+        {
+          "name": "E-KYC Fraud Detection System",
+          "type": "AI-powered Identity Verification",
+          "url": "",
+          "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "Flask", "Waitress"],
+          "role": "ML Engineer",
+          "team_size": 1,
+          "development_duration": 6,
+          "status": "Production",
+          "highlights": [
+            "Built complete ML pipeline from data collection, custom dataset preparation to production deployment",
+            "Designed and trained CNN-based fraud detection model using 100K+ labeled images",
+            "Reduced manual review time by 90% while maintaining 99.2% accuracy",
+            "Impact: 99% E-KYC fraud reduction"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Service Engine",
+      "website": "https://sebpo.com",
+      "employment_type": "On-Site",
+      "tenure": "October, 2019 - February, 2020",
+      "projects": [
+        {
+          "name": "Web Scrapping System",
+          "type": "Scrapper",
+          "url": "",
+          "technologies": ["Java", "Threading", "Regular Expression", "Groovy", "SQLite"],
+          "role": "Developer",
+          "team_size": 6,
+          "development_duration": 6,
+          "status": "Production",
+          "highlights": [
+            "Developed a custom web scrapping engine to efficiently parse any website or resource",
+            "Implemented an efficient multi-threaded scrapper able to use groovy scripts",
+            "Database schema design to store scrapped data"
+          ]
+        },
+        {
+          "name": "SWIFT Message Parser",
+          "type": "Automation",
+          "url": "",
+          "technologies": ["Python", "SQLite"],
+          "role": "Developer",
+          "team_size": 6,
+          "development_duration": 6,
+          "status": "Production",
+          "highlights": [
+            "Developed a SWIFT message parsing system",
+            "Introduced automation a Govt. bank eliminating manual processing costs"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Web Developer",
+      "company": "AODoubleClick",
+      "employment_type": "Freelancer",
+      "tenure": "",
+      "projects": [
+        {
+          "name": "AODoubleclick Inc.",
+          "type": "E-Commerce Website",
+          "url": "https://www.aodoubleclick.com",
+          "technologies": ["Python","Spring Boot", "MySQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
+          "role": "Full Stack",
+          "team_size": 4,
+          "development_duration": 3,
+          "status": "Production",
+          "highlights": [
+            "Implemented recommender system (content-based and collaborative filtering), boosting sales by 30%",
+            "Feature/API development and third part API integration"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Officer",
+      "company": "North South University",
+      "website": "https://www.northsouth.edu",
+      "employment_type": "",
+      "tenure": "",
+      "projects": [
+        {
+          "name": "",
+          "type": "",
+          "url": "",
+          "technologies": ["Java", "JavaFX", "MySQL", "SQLite", "Data Structure"],
+          "role": "",
+          "team_size": 0,
+          "development_duration": 0,
+          "status": "",
+          "highlights": [
+            "Worked in the in-house software development",
+            "Taught undergrad lab courses (Java, C, C++, Data Structure, Algorithm)"
+          ]
+        }
+      ]
+    }
   ],
 
   "opensource": [
@@ -279,13 +284,19 @@
       "name": "Point-of-Sale",
       "description": "Open-source POS with inventory management",
       "stars": 300,
-      "url": ""
+      "url": "https://github.com/sadatrafsanjani/JavaFX-Point-of-Sales"
     },
     {
       "name": "Hospital Appointment System",
       "description": "Appointment system used in Vietnam",
       "stars": 16,
-      "url": ""
+      "url": "https://github.com/sadatrafsanjani/CodeIgniter-Online-Hospital-Appointment"
+    },
+    {
+      "name": "Payroll Management System",
+      "description": "Free payroll tracking software",
+      "stars": 24,
+      "url": "https://github.com/sadatrafsanjani/CodeIgniter-Payroll-Management-System"
     }
   ],
 

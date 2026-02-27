@@ -1,18 +1,29 @@
 <div class="row">
   <div class="col-xl-12 text-center mb-4">
     <h3 class="h3 mt-3">{{ personalInfo.first_name }} <span class="lastName">{{ personalInfo.last_name }}</span></h3>
-    <p class="contact"><i class="bi bi bi-envelope" aria-hidden="true"></i> {{ personalInfo.email }} | <i
-      class="bi bi-github"></i>&nbsp;<a [href]=personalInfo.github target="_blank">{{ personalInfo.github }}</a>
+    <p class="contact">
+      Software Engineer <i class="bi bi-dot"></i> Researcher <i class="bi bi-dot"></i> Author
     </p>
-    <p class="contact"><i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.linkedin target="_blank">{{ personalInfo.linkedin }}</a></p>
-    <p class="contact">{{ personalInfo.relocation }} | {{ personalInfo.location }} | {{ personalInfo.timezone }}</p>
+    <p class="contact">
+      <i class="bi bi bi-envelope-fill" aria-hidden="true"></i> {{ personalInfo.email }}
+      <i class="bi bi-dot"></i>
+      <i class="bi bi-github"></i>&nbsp;<a [href]=personalInfo.github target="_blank">sadatrafsanjani</a>
+      <i class="bi bi-dot"></i>
+      <i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.linkedin target="_blank">sadatrafsanjani</a>
+    </p>
+    <p class="contact">
+      <i class="bi bi bi-airplane-fill"></i> {{ personalInfo.relocation }} |
+      <i class="bi bi bi-globe"></i> {{ personalInfo.location }} |
+      <i class="bi bi bi-clock-fill"></i> {{ personalInfo.timezone }}
+    </p>
   </div>
 </div>
 
 <div class="row">
   <div class="col-xl-12">
-    <p>
+    <p class="justify-content-evenly">
       {{ personalInfo.summary }}
     </p>
+    <p><span class="fw-bolder">Research Interest:</span> {{ personalInfo.research_interest }}</p>
   </div>
 </div>

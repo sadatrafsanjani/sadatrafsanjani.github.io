@@ -4,16 +4,14 @@
   <div id="layoutSidenav_content">
     <main>
       <div class="container-fluid px-4">
-
         @if (data(); as profile) {
           <app-personal-info [personalInfo]="profile.personal_info"></app-personal-info>
           <app-skill [skills]="profile.skills"></app-skill>
-          <app-experience></app-experience>
+          <app-experience [experiences]="profile.experience"></app-experience>
           <app-opensource [opensources]="profile.opensource"></app-opensource>
           <app-education [educations]="profile.education"></app-education>
           <app-research [researches]="profile.research"></app-research>
         }
-
       </div>
     </main>
     <app-footer></app-footer>
