@@ -9,6 +9,7 @@
     "location": "Remote-Ready",
     "timezone": "GMT+6",
     "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
+    "cv": "https://drive.google.com/file/d/1YRq_lN8zSa0bV_aZMFLM6GJtVQrQiDqo/view?usp=sharing",
     "research_interest": "Deep Learning, Natural Language Processing, Generative AI"
   },
 
@@ -304,13 +305,15 @@
     {
       "degree": "Master in Information Technology",
       "institution": "Dhaka University",
+      "institution_url": "https://iit.du.ac.bd/",
       "graduation_year": 2022,
       "courses": "",
-      "accreditation": ""
+      "accreditation": "https://www.credly.com/badges/34c8a900-d4c2-4f08-9836-1d4269d07b3b"
     },
     {
       "degree": "Bachelor in Computer Science and Engineering",
       "institution": "National University, Bangladesh",
+      "institution_url": "https://www.nu.ac.bd/",
       "graduation_year": 2016,
       "courses": "",
       "accreditation": ""

@@ -8,5 +8,6 @@ export interface PersonalinfoDTO {
   location: string;
   timezone: string;
   summary: string;
+  cv: string;
   research_interest: string;
 }

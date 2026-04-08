@@ -6,7 +6,14 @@
     <div class="col-xl-12 mb-3">
 
       @if (experience.title){
-        <span class="fw-bold">{{ experience.title }}</span> &#64; <span class="fw-bold"><a [href]=experience.website target="_blank">{{ experience.company }}</a></span> | {{ experience.employment_type }}
+        <div class="row">
+          <div class="col-md-10">
+            <span class="fw-bold">{{ experience.title }}</span> &#64; <span class="fw-bold"><a [href]=experience.website target="_blank">{{ experience.company }}</a></span> | {{ experience.employment_type }}
+          </div>
+          <div class="col-md-2 text-sm-end">
+            <span class="text-info-emphasis">{{ experience.tenure }}</span>
+          </div>
+        </div>
       }
 
       @for (project of experience.projects; track $index) {

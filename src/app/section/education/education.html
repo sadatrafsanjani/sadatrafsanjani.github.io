@@ -5,8 +5,10 @@
     @for (education of educations; track $index) {
 
       <div>
-        <span class="fw-bolder">{{ education.institution }}</span> | Class of {{ education.graduation_year }}<br />
-        <p><span class="fw-bold">{{ education.degree }}</span></p>
+        <p>
+          <span class="fw-bold text-dark">{{ education.degree }}</span> |
+          <span class="fw-bolder"><a [href]="education.institution_url" target="_blank">{{ education.institution }}</a></span> ({{ education.graduation_year }})
+        </p>
       </div>
     }
 
