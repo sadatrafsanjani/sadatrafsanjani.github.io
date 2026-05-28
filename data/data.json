@@ -5,7 +5,7 @@
     "email": "sadatrafsanjani at gmail.com",
     "github": "https://github.com/sadatrafsanjani",
     "linkedin": "https://www.linkedin.com/in/sadatrafsanjani",
-    "relocation": "Open to Relocation (Company Sponsor Needed)",
+    "relocation": "Open to Relocate (Company Sponsor Needed)",
     "location": "Remote-Ready",
     "timezone": "GMT+6",
     "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
@@ -39,7 +39,7 @@
           "technologies": ["Spring Boot", "React", "Tailwind", "Kafka", "Redis", "Elasticsearch", "Docker", "Kubernetes", "MySQL"],
           "role": "Technical Lead",
           "team_size": 15,
-          "development_duration": 18,
+          "development_duration": "18 months",
           "status": "Production",
           "highlights": [
             "Redesigned monolithic system to event-driven microservices based platform serving 20+ law firms",
@@ -70,7 +70,7 @@
           "technologies": ["Spring Boot", "Bootstrap", "React", "Tailwind", "Oracle", "Quartz", "Docker", "Kubernetes", "Redis"],
           "role": "Lead Engineer",
           "team_size": 12,
-          "development_duration": 12,
+          "development_duration": "12 months",
           "status": "Production",
           "highlights": [
             "Converted legacy system to modern 3-tier architecture",
@@ -91,7 +91,7 @@
           "technologies": ["Spring Boot", "Bootstrap", "Akka", "Oracle", "Kafka", "Tomcat"],
           "role": "Technical Lead",
           "team_size": 12,
-          "development_duration": 4,
+          "development_duration": "4 months",
           "status": "Production",
           "highlights": [
             "Third-party mobile banking API integration",
@@ -108,7 +108,7 @@
           "technologies": ["Spring Boot", "Oracle", "Tomcat"],
           "role": "Technical Lead",
           "team_size": 12,
-          "development_duration": 8,
+          "development_duration": "8 months",
           "status": "Production",
           "highlights": [
             "FD/DPS system API implementation",
@@ -136,7 +136,7 @@
           "technologies": ["Spring Boot", "Angular", "PostgreSQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
           "role": "Technical Lead",
           "team_size": 12,
-          "development_duration": 3,
+          "development_duration": "3 months",
           "status": "Down",
           "highlights": [
             "Built an E-learning 3-Tier system completely from scratch",
@@ -160,7 +160,7 @@
           "technologies": ["Spring Boot", "Angular", "MySQL", "AWS", "NGINX"],
           "role": "Full-stack Developer",
           "team_size": 6,
-          "development_duration": 6,
+          "development_duration": "6 months",
           "status": "Production",
           "highlights": [
             "Implemented a full-fledged video call-based consultation system enabling 1000+ daily consultations",
@@ -184,7 +184,7 @@
           "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "Flask", "Waitress"],
           "role": "ML Engineer",
           "team_size": 1,
-          "development_duration": 6,
+          "development_duration": "6 months",
           "status": "Production",
           "highlights": [
             "Built complete ML pipeline from data collection, custom dataset preparation to production deployment",
@@ -209,7 +209,7 @@
           "technologies": ["Java", "Threading", "Regular Expression", "Groovy", "SQLite"],
           "role": "Developer",
           "team_size": 6,
-          "development_duration": 6,
+          "development_duration": "6 months",
           "status": "Production",
           "highlights": [
             "Developed a custom web scrapping engine to efficiently parse any website or resource",
@@ -224,7 +224,7 @@
           "technologies": ["Python", "SQLite"],
           "role": "Developer",
           "team_size": 6,
-          "development_duration": 6,
+          "development_duration": "6 months",
           "status": "Production",
           "highlights": [
             "Developed a SWIFT message parsing system",
@@ -246,7 +246,7 @@
           "technologies": ["Python","Spring Boot", "MySQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
           "role": "Full Stack",
           "team_size": 4,
-          "development_duration": 3,
+          "development_duration": "3 months",
           "status": "Production",
           "highlights": [
             "Implemented recommender system (content-based and collaborative filtering), boosting sales by 30%",
@@ -259,7 +259,7 @@
       "title": "Officer",
       "company": "North South University",
       "website": "https://www.northsouth.edu",
-      "employment_type": "",
+      "employment_type": "On Site",
       "tenure": "",
       "projects": [
         {
