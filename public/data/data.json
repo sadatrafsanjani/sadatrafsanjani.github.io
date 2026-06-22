@@ -43,6 +43,7 @@
           "status": "Production",
           "highlights": [
             "Redesigned monolithic system to event-driven microservices based platform serving 20+ law firms",
+            "Biometric authentication system integration and implementation",
             "Implemented real-time chat system handling 50K+ messages daily using WebSocket",
             "Reduced system response time by 50% through Redis caching and Elasticsearch integration",
             "Retry based distributed mailer service implementation with FTL email template design",
