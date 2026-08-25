@@ -1,21 +1,23 @@
 <div class="row">
   <div class="col-xl-12 text-center mb-4">
+
     <h3 class="h3 mt-3">{{ personalInfo.first_name }} <span class="lastName">{{ personalInfo.last_name }}</span></h3>
-    <p class="contact">
-      Senior Software Engineer <i class="bi bi-dot"></i> Researcher <i class="bi bi-dot"></i> Author
+
+    <p class="intro">
+      <span class="fw-bolder">Independent Contractor</span>
+      <i class="bi bi-dot"></i> <span class="fw-bolder">Solution Architect</span>
+      <span class="fw-bolder">Senior Software Engineer</span>
     </p>
-    <p class="contact">
-      <i class="bi bi bi-envelope-fill" aria-hidden="true"></i> {{ personalInfo.email }}
-      <i class="bi bi-dot"></i>
-      <i class="bi bi-github"></i>&nbsp;<a [href]=personalInfo.github target="_blank">sadatrafsanjani</a>
-      <i class="bi bi-dot"></i>
-      <i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.linkedin target="_blank">sadatrafsanjani</a>
+
+    <p class="taglines">
+      Backend Engineering <i class="bi bi-dash"></i>
+      System Design <i class="bi bi-dash"></i>
+      Distributed System <i class="bi bi-dash"></i>
+      Microservice <i class="bi bi-dash"></i>
+      FinTech <i class="bi bi-dash"></i>
+      Technical Leadership
     </p>
-    <p class="contact">
-      <i class="bi bi bi-airplane-fill"></i> {{ personalInfo.relocation }} |
-      <i class="bi bi bi-globe"></i> {{ personalInfo.location }} |
-      <i class="bi bi bi-clock-fill"></i> {{ personalInfo.timezone }}
-    </p>
+
   </div>
 </div>
 
@@ -24,7 +26,13 @@
     <p class="justify-content-evenly">
       {{ personalInfo.summary }}
     </p>
-    <p><span class="fw-bolder">Research Interest:</span> {{ personalInfo.research_interest }}</p>
-    <p><span class="fw-bolder">CV: </span> My downloadable CV link <a [href]="personalInfo.cv" target="_blank">CV</a></p>
+
+    <p>
+      <span class="fw-bold">Contact Me: </span>
+      <span class="fw-bolder"></span><i class="bi bi-clipboard-fill"></i>&nbsp;<a [href]="personalInfo.cv" target="_blank">Download CV</a>&nbsp;
+      <span class="fw-bolder"></span><i class="bi bi-github"></i>&nbsp;<a [href]=personalInfo.github target="_blank">sadatrafsanjani</a>&nbsp;
+      <span class="fw-bolder"></span><i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.linkedin target="_blank">sadatrafsanjani</a>&nbsp;
+      <span class="fw-bolder"></span><i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.email target="_blank">{{ personalInfo.email }}</a>
+    </p>
   </div>
 </div>

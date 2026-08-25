@@ -1,8 +1,8 @@
 import {Component, inject} from '@angular/core';
 import {toSignal} from '@angular/core/rxjs-interop';
-import {Navbar} from '../template/navbar/navbar';
-import {Footer} from '../template/footer/footer';
-import {Sidebar} from '../template/sidebar/sidebar';
+import {Navbar} from '../section/navbar/navbar';
+import {Footer} from '../section/footer/footer';
+import {Sidebar} from '../section/sidebar/sidebar';
 import {DataService} from '../service/data-service';
 import {PersonalInfo} from '../section/personal-info/personal-info';
 import {Skill} from '../section/skill/skill';

@@ -4,9 +4,6 @@ export interface PersonalinfoDTO {
   email: string;
   github: string;
   linkedin: string;
-  relocation: string;
-  location: string;
-  timezone: string;
   summary: string;
   cv: string;
   research_interest: string;

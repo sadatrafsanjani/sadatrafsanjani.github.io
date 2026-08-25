@@ -5,29 +5,31 @@
     "email": "sadatrafsanjani at gmail.com",
     "github": "https://github.com/sadatrafsanjani",
     "linkedin": "https://www.linkedin.com/in/sadatrafsanjani",
-    "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
-    "cv": "https://drive.google.com/file/d/1YRq_lN8zSa0bV_aZMFLM6GJtVQrQiDqo/view?usp=sharing",
+    "tags": ["Meticulous", "Proactive", "Leader"],
+    "summary": "9+ years building production-grade enterprise systems across banking, SaaS and healthcare. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
+    "cv": "https://drive.google.com/file/d/1NOImasPH3xUo6lzBKn6K3LsM-mFmUBlw/view?usp=sharing",
     "research_interest": "Deep Learning, Natural Language Processing, Generative AI"
   },
 
   "skills": {
     "languages": ["Java", "Python", "SQL", "JavaScript", "TypeScript"],
-    "frameworks": ["Spring Boot", "Flask", "Django", "JavaFX", "Angular", "ReactJS", "ElectronJS"],
+    "frameworks": ["Spring Boot", "Spring Security", "Spring Data JPA", "Hibernate", "Flask", "Django", "Angular", "ReactJS"],
+    "desktop": ["JavaFX", "ElectronJS"],
     "databases": ["PostgreSQL", "Oracle", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Memcached"],
-    "messaging": ["Kafka", "RabbitMQ"],
-    "devops_tools": ["Docker", "Kubernetes", "AWS", "Jenkins", "SonarQube"],
+    "messaging": ["Apache Kafka", "RabbitMQ", "WebSocket"],
+    "devops_tools": ["Docker", "Kubernetes", "AWS", "Jenkins", "GitHub Actions", "SonarQube", "nginx"],
     "build_tools": ["Gradle", "Maven"],
-    "collaboration_tools": ["JIRA", "Confluence", "Bitbucket", "GitLab", "GitHub", "SVN"],
-    "ai": ["TensorFlow", "Keras", "PyTorch", "OpenCV", "NumPy", "Scikit-Learn", "Pandas", "Machine Learning", "Deep Learning", "CNN"]
+    "collaboration_tools": ["Git", "JIRA", "Confluence", "Bitbucket", "GitLab", "GitHub", "SVN"],
+    "ai": ["TensorFlow", "Keras", "PyTorch", "OpenCV", "NumPy", "Scikit-Learn", "Pandas", "Machine Learning", "Deep Learning", "Computer Vision", "CNN", "Transformers"]
   },
 
   "experience": [
     {
       "title": "Senior Software Developer",
-      "company": "Law Firm",
+      "company": "Gehi & Associates",
       "website": "https://gehilaw.com",
       "employment_type": "Remote",
-      "tenure": "February, 2024 - August, 2026",
+      "tenure": "February, 2024 - Present",
       "projects": [
         {
           "name": "My Legal Software",
