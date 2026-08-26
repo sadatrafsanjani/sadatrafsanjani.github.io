@@ -6,8 +6,7 @@
     "github": "https://github.com/sadatrafsanjani",
     "linkedin": "https://www.linkedin.com/in/sadatrafsanjani",
     "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
-    "cv": "https://drive.google.com/file/d/1YRq_lN8zSa0bV_aZMFLM6GJtVQrQiDqo/view?usp=sharing",
-    "research_interest": "Deep Learning, Natural Language Processing, Generative AI"
+    "cv": "https://drive.google.com/file/d/1YRq_lN8zSa0bV_aZMFLM6GJtVQrQiDqo/view?usp=sharing"
   },
 
   "skills": {
@@ -15,7 +14,7 @@
     "frameworks": ["Spring Boot", "Flask", "Django", "JavaFX", "Angular", "ReactJS", "ElectronJS"],
     "databases": ["PostgreSQL", "Oracle", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Memcached"],
     "messaging": ["Kafka", "RabbitMQ"],
-    "devops_tools": ["Docker", "Kubernetes", "AWS", "Jenkins", "SonarQube"],
+    "devops_tools": ["Docker", "Kubernetes", "AWS", "Jenkins", "SonarQube", "NGINX"],
     "build_tools": ["Gradle", "Maven"],
     "collaboration_tools": ["JIRA", "Confluence", "Bitbucket", "GitLab", "GitHub", "SVN"],
     "ai": ["TensorFlow", "Keras", "PyTorch", "OpenCV", "NumPy", "Scikit-Learn", "Pandas", "Machine Learning", "Deep Learning", "CNN"]
@@ -24,32 +23,39 @@
   "experience": [
     {
       "title": "Senior Software Developer",
-      "company": "Law Firm",
+      "company": "US Law Firm",
       "website": "https://gehilaw.com",
-      "employment_type": "Remote",
       "tenure": "February, 2024 - August, 2026",
       "projects": [
         {
-          "name": "My Legal Software",
-          "type": "Multi-tenant Legal Practice Management SaaS",
+          "title": "My Legal Software",
+          "subtitle": "Multi-Tenant Legal Practice Management SaaS",
+          "problem": "A legacy legal practice management platform needed to support multiple law firms while handling increasing real-time communication, search, notification, reporting, and integration requirements. The system needed better scalability, responsiveness, reliability, and deployment automation while continuing to support production workloads.",
+          "role": "Technical Lead | Team of 15 | 2 years 6 months",
+          "technologies": ["Spring Boot", "MySQL", "React", "Tailwind", "Kafka", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
           "url": "https://mylegalsoftware.com",
-          "technologies": ["Spring Boot", "React", "Tailwind", "Kafka", "Redis", "Elasticsearch", "Docker", "Kubernetes", "MySQL"],
-          "role": "Technical Lead",
           "team_size": 15,
-          "development_duration": "18 months",
-          "status": "Production",
-          "highlights": [
-            "Redesigned monolithic system to event-driven microservices based platform serving 20+ law firms",
-            "Biometric authentication system integration and implementation",
-            "Implemented real-time chat system handling 50K+ messages daily using WebSocket",
-            "Reduced system response time by 50% through Redis caching and Elasticsearch integration",
-            "Retry based distributed mailer service implementation with FTL email template design",
-            "Quartz based scheduler system implementation for scheduled mail/news/events",
-            "Developed cross-platform desktop application for website access",
-            "Streamlined the deployment process introducing Docker, Kubernetes and Jenkins",
-            "Integration of Microsoft, Google, DocuSign, Zoom, Dialpad, Quickbook API",
-            "Peer code review, critical bug fixing, incident investigation and code optimization",
-            "Comprehensive documentation on system design"
+          "contributions": [
+            "Redesigned the platform from a monolithic architecture to event-driven microservices.",
+            "Implemented a WebSocket-based real-time communication system handling 50K+ messages daily.",
+            "Introduced Redis caching and Elasticsearch-based search, reducing system response time by 50%.",
+            "Designed a retry-based distributed mailer service with failure handling and logging.",
+            "Implemented Quartz-based scheduling for automated mail, news, and event processing.",
+            "Developed notification services supporting unicast, multicast, and broadcast communication.",
+            "Implemented biometric authentication integration.",
+            "Developed a cross-platform desktop application for accessing the platform.",
+            "Containerized and streamlined deployment using Docker, Kubernetes, and Jenkins.",
+            "Integrated multiple external platforms including Microsoft, Google, DocuSign, Zoom, Dialpad, and QuickBooks.",
+            "Led peer code reviews, production incident investigation, bug fixing, and performance optimization.",
+            "Produced comprehensive system architecture and technical documentation."
+          ],
+          "impacts": [
+            "20+ law firms served by the platform.",
+            "50K+ real-time messages/day handled through the communication system.",
+            "50% reduction in system response time through caching and search optimization.",
+            "15-person engineering team led during development and production delivery.",
+            "Event-driven microservices architecture replacing the legacy monolithic architecture.",
+            "Production SaaS platform deployed using Docker, Kubernetes, SonarQube and Jenkins."
           ]
         }
       ]
@@ -58,112 +64,145 @@
       "title": "Senior Software Engineer (Level-III)",
       "company": "Brain Station 23 PLC.",
       "website": "https://brainstation-23.com",
-      "employment_type": "On-Site",
       "tenure": "June, 2022 - February, 2024",
       "projects": [
         {
-          "name": "Real Time Gross Settlement",
-          "type": "Inter-Bank Fund Transfer System",
+          "title": "Real Time Gross Settlement",
+          "subtitle": "Inter-Bank Fund Transfer System",
+          "problem": "A legacy inter-bank fund transfer system required modernization to improve maintainability, security, transaction processing, and integration with the Central Bank's settlement infrastructure.",
+          "role": "Lead Engineer | Team of 12 | 12 months",
+          "technologies": ["Spring Boot", "React", "Bootstrap", "Tailwind", "Oracle", "Quartz", "Redis", "Docker", "Kubernetes"],
           "url": "",
-          "technologies": ["Spring Boot", "Bootstrap", "React", "Tailwind", "Oracle", "Quartz", "Docker", "Kubernetes", "Redis"],
-          "role": "Lead Engineer",
           "team_size": 12,
-          "development_duration": "12 months",
-          "status": "Production",
-          "highlights": [
-            "Converted legacy system to modern 3-tier architecture",
-            "JWT/Refresh token-based authentication",
-            "Dynamic role-based menu access system",
-            "Active user session management system",
-            "Implemented STP/STPG server to communicate with Central Bank",
-            "Email configuration and mailing System implementation",
-            "Inward/Outward transaction scheduler implementation",
-            "Built scheduled transaction system handling 10K+ daily automated fund transfers",
-            "Regularly reviewing codes for other developers"
+          "contributions": [
+            "Converted the legacy system to a modern 3-tier architecture.",
+            "Implemented JWT and refresh token-based authentication.",
+            "Designed and implemented a dynamic role-based menu access system.",
+            "Implemented active user session management.",
+            "Developed the STP/STPG server for communication with the Central Bank.",
+            "Implemented email configuration and mailing services.",
+            "Developed inward and outward transaction schedulers.",
+            "Built a scheduled transaction processing system handling 10K+ daily automated fund transfers.",
+            "Performed regular code reviews and provided technical guidance to other developers."
+          ],
+          "impacts": [
+            "10K+ automated fund transfers processed daily.",
+            "Modernized the legacy platform into a maintainable 3-tier architecture.",
+            "Enabled secure Central Bank communication through STP/STPG integration.",
+            "Led a 12-person engineering team through production delivery."
           ]
         },
         {
-          "name": "CityLive",
-          "type": "Corporate Banking Platform for City Bank PLC",
-          "url": "https://www.citytouch.com.bd/CityBank/login",
+          "title": "CityLive",
+          "subtitle": "Corporate Banking Platform for City Bank PLC",
+          "problem": "A corporate banking platform required scalable transaction processing, reliable third-party banking integrations, and high availability across multiple application servers to support large-scale corporate banking operations.",
+          "role": "Technical Lead | Team of 12 | 4 months",
           "technologies": ["Spring Boot", "Bootstrap", "Akka", "Oracle", "Kafka", "Tomcat"],
-          "role": "Technical Lead",
+          "url": "https://www.citytouch.com.bd/CityBank/login",
           "team_size": 12,
-          "development_duration": "4 months",
-          "status": "Production",
-          "highlights": [
-            "Third-party mobile banking API integration",
-            "Implemented bulk transaction microservice capable of handling 1M+ transactions at a time",
-            "Session replication across multiple server node for load balancing",
-            "SSL Certificate Incorporation",
-            "Unit/Integration test implementation"
+          "contributions": [
+            "Integrated third-party mobile banking APIs with the corporate banking platform.",
+            "Designed and implemented a bulk transaction microservice capable of handling 1M+ transactions at a time.",
+            "Implemented session replication across multiple server nodes to support load balancing and high availability.",
+            "Configured and incorporated SSL certificates for secure application communication.",
+            "Implemented comprehensive unit and integration testing for critical application components."
+          ],
+          "impacts": [
+            "1M+ transactions handled by the bulk transaction processing service.",
+            "Enabled scalable high-volume transaction processing for corporate banking operations.",
+            "Improved application availability through multi-node session replication and load balancing.",
+            "Led a 12-person engineering team through a 4-month production delivery."
           ]
         },
         {
-          "name": "UNET",
-          "type": "Retail Banking Platform for City Bank PLC",
+          "title": "UNET",
+          "subtitle": "Retail Banking Platform for City Bank PLC",
+          "problem": "A retail banking platform required secure and reliable digital banking services, including deposit management, card controls, OTP security, customer notifications, and high-volume transaction processing.",
+          "role": "Technical Lead | Team of 12 | 8 months",
+          "technologies": [
+            "Spring Boot",
+            "Oracle",
+            "Tomcat"
+          ],
           "url": "https://ibank.thecitybank.com",
-          "technologies": ["Spring Boot", "Oracle", "Tomcat"],
-          "role": "Technical Lead",
           "team_size": 12,
-          "development_duration": "8 months",
-          "status": "Production",
-          "highlights": [
-            "FD/DPS system API implementation",
-            "OTP Lock/Unlock implementation",
-            "Card Activate/Deactivate feature development",
-            "Customer email subscription and push notification implementation",
-            "SSL Certificate Incorporation",
-            "Implemented bulk transaction microservice capable of handling 1M+ transactions at a time",
-            "Unit/Integration test implementation"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Co-Founder & Senior Software Engineer",
-      "company": "RMS Academy",
-      "website": "",
-      "employment_type": "",
-      "tenure": "April, 2022 - June, 2022",
-      "projects": [
-        {
-          "name": "RMS Academy BD",
-          "type": "E-learning Platform",
-          "url": "",
-          "technologies": ["Spring Boot", "Angular", "PostgreSQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
-          "role": "Technical Lead",
-          "team_size": 12,
-          "development_duration": "3 months",
-          "status": "Down",
-          "highlights": [
-            "Built an E-learning 3-Tier system completely from scratch",
-            "System design and infrastructure maintenance",
-            "Responsible for server maintenance and deployment"
+          "contributions": [
+            "Implemented FD/DPS system APIs for retail banking operations.",
+            "Developed OTP lock and unlock functionality to strengthen account security.",
+            "Implemented card activation and deactivation features.",
+            "Developed customer email subscription and push notification services.",
+            "Configured and incorporated SSL certificates for secure application communication.",
+            "Implemented a bulk transaction microservice capable of handling 1M+ transactions at a time.",
+            "Implemented unit and integration testing for critical application components."
+          ],
+          "impacts": [
+            "1M+ transactions handled by the bulk transaction processing service.",
+            "Enabled secure digital banking services for FD/DPS, OTP, and card management.",
+            "Improved customer engagement through email subscriptions and push notifications.",
+            "Led a 12-person engineering team through an 8-month production delivery."
           ]
         }
       ]
     },
     {
       "title": "Senior Software Engineer",
-      "company": "Square Health Pvt. Ltd.",
+      "company": "RMS Academy E-Learning Platform",
+      "website": "",
+      "tenure": "April, 2022 - June, 2022",
+      "projects": [
+        {
+          "title": "RMS Academy BD",
+          "subtitle": "E-learning Platform",
+          "problem": "An e-learning platform needed to be built from the ground up with a scalable architecture, reliable infrastructure, and a deployment process capable of supporting online education services.",
+          "role": "Technical Lead | Team of 12 | 3 months",
+          "technologies": ["Spring Boot", "Angular", "PostgreSQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
+          "url": "",
+          "team_size": 12,
+          "contributions": [
+            "Designed and built the complete e-learning platform from scratch using a 3-tier architecture.",
+            "Designed the system architecture and supporting infrastructure.",
+            "Implemented backend services using Spring Boot and frontend applications using Angular.",
+            "Configured and maintained PostgreSQL, Kafka, and Redis infrastructure.",
+            "Containerized the application using Docker and managed deployment through Kubernetes and Jenkins.",
+            "Managed server infrastructure, application deployment, and production maintenance.",
+            "Led the development team and coordinated technical implementation."
+          ],
+          "impact": [
+            "Built the complete platform from scratch within 3 months.",
+            "Established a production-ready 3-tier architecture and deployment infrastructure.",
+            "Led a 12-person engineering team through system development and delivery.",
+            "Implemented containerized deployment using Docker, Kubernetes, and Jenkins."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Square Health Ltd.",
       "website": "https://squarehealth.com.bd",
-      "employment_type": "Contract",
       "tenure": "October, 2021 - March, 2022",
       "projects": [
         {
-          "name": "JOTNO",
-          "type": "Telemedicine Consultation System",
-          "url": "https://jotno.net",
+          "title": "JOTNO",
+          "subtitle": "Telemedicine Consultation System",
+          "problem": "A telemedicine platform required a reliable online consultation system that could support large numbers of daily doctor-patient video consultations while making it easier for patients to discover and book doctors based on specialty and location.",
+          "role": "Full-stack Developer | Team of 6 | 6 months",
           "technologies": ["Spring Boot", "Angular", "MySQL", "AWS", "NGINX"],
-          "role": "Full-stack Developer",
+          "url": "https://jotno.net",
           "team_size": 6,
-          "development_duration": "6 months",
-          "status": "Production",
-          "highlights": [
-            "Implemented a full-fledged video call-based consultation system enabling 1000+ daily consultations",
-            "Developed efficient doctor search portal with specialty/location filtering, increasing bookings by 50%",
-            "Regular bug fixing and feature development, mentoring junior programmers"
+          "contributions": [
+            "Implemented a full-fledged video call-based consultation system.",
+            "Developed an efficient doctor search portal with specialty and location-based filtering.",
+            "Developed and maintained backend services using Spring Boot and frontend functionality using Angular.",
+            "Managed application deployment and infrastructure using AWS and NGINX.",
+            "Performed regular production bug fixing, troubleshooting, and feature development.",
+            "Mentored junior programmers and provided technical guidance during development."
+          ],
+          "impact": [
+            "1000+ daily doctor-patient consultations supported through the video consultation system.",
+            "50% increase in doctor bookings through improved specialty and location-based search.",
+            "Enabled scalable online healthcare consultations through a production-ready telemedicine platform.",
+            "Mentored junior developers and contributed across the full software development lifecycle."
           ]
         }
       ]
@@ -176,19 +215,26 @@
       "tenure": "March, 2020 - October, 2021",
       "projects": [
         {
-          "name": "E-KYC Fraud Detection System",
-          "type": "AI-powered Identity Verification",
-          "url": "",
+          "title": "E-KYC Fraud Detection System",
+          "subtitle": "AI-Powered Identity Verification",
+          "problem": "Manual identity verification required significant review effort and was vulnerable to fraudulent submissions. A production-ready automated fraud detection system was needed to process large volumes of identity documents and reduce manual verification workload.",
+          "role": "ML Engineer | Team of 1 | 6 months",
           "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "Flask", "Waitress"],
-          "role": "ML Engineer",
+          "url": "",
           "team_size": 1,
-          "development_duration": "6 months",
-          "status": "Production",
-          "highlights": [
-            "Built complete ML pipeline from data collection, custom dataset preparation to production deployment",
-            "Designed and trained CNN-based fraud detection model using 100K+ labeled images",
-            "Reduced manual review time by 90% while maintaining 99.2% accuracy",
-            "Impact: 99% E-KYC fraud reduction"
+          "contributions": [
+            "Built the complete ML pipeline from data collection and custom dataset preparation to production deployment.",
+            "Designed and trained a CNN-based fraud detection model using 100K+ labeled images.",
+            "Developed image preprocessing and computer vision pipelines using OpenCV.",
+            "Exposed the trained ML model through a production API using Flask and Waitress.",
+            "Optimized the inference pipeline for integration with the identity verification workflow."
+          ],
+          "impact": [
+            "99.2% fraud detection accuracy achieved on the production model.",
+            "90% reduction in manual identity verification review time.",
+            "99% reduction in E-KYC fraud.",
+            "100K+ labeled identity images used for model development and training.",
+            "Complete ML solution designed, developed, and deployed independently."
           ]
         }
       ]
@@ -201,32 +247,46 @@
       "tenure": "October, 2019 - February, 2020",
       "projects": [
         {
-          "name": "Web Scrapping System",
-          "type": "Scrapper",
+          "title": "Web Scraping System",
+          "subtitle": "Custom Multi-threaded Web Scraping Engine",
+          "problem": "A flexible web scraping solution was required to extract and process data from different websites and resources efficiently while supporting customizable scraping logic and structured data storage.",
+          "role": "Developer | Team of 6 | 6 months",
+          "technologies": ["Java", "Multithreading", "Regular Expressions", "Groovy", "SQLite"],
           "url": "",
-          "technologies": ["Java", "Threading", "Regular Expression", "Groovy", "SQLite"],
-          "role": "Developer",
           "team_size": 6,
-          "development_duration": "6 months",
-          "status": "Production",
-          "highlights": [
-            "Developed a custom web scrapping engine to efficiently parse any website or resource",
-            "Implemented an efficient multi-threaded scrapper able to use groovy scripts",
-            "Database schema design to store scrapped data"
+          "contributions": [
+            "Developed a custom web scraping engine capable of parsing data from different websites and resources.",
+            "Implemented a multi-threaded scraping engine to improve concurrent processing and extraction performance.",
+            "Integrated Groovy scripting to support customizable scraping logic and processing workflows.",
+            "Designed the database schema for storing and organizing scraped data.",
+            "Implemented data extraction and parsing using Java and regular expressions."
+          ],
+          "impacts": [
+            "Built a reusable scraping engine capable of supporting multiple websites and resources.",
+            "Enabled concurrent web scraping through a multi-threaded processing architecture.",
+            "Provided customizable scraping workflows through Groovy scripting.",
+            "Delivered the system as a production-ready solution within 6 months."
           ]
         },
         {
-          "name": "SWIFT Message Parser",
-          "type": "Automation",
-          "url": "",
+          "title": "SWIFT Message Parser",
+          "subtitle": "Banking Message Processing Automation",
+          "problem": "Manual processing of SWIFT messages in a government bank was time-consuming, operationally expensive, and prone to human error. An automated message parsing solution was required to streamline the workflow.",
+          "role": "Developer | Team of 6 | 6 months",
           "technologies": ["Python", "SQLite"],
-          "role": "Developer",
+          "url": "",
           "team_size": 6,
-          "development_duration": "6 months",
-          "status": "Production",
-          "highlights": [
-            "Developed a SWIFT message parsing system",
-            "Introduced automation a Govt. bank eliminating manual processing costs"
+          "contributions": [
+            "Developed a SWIFT message parsing system for automated message processing.",
+            "Designed parsing logic to extract and process structured information from SWIFT messages.",
+            "Implemented data persistence using SQLite.",
+            "Automated the existing manual message processing workflow."
+          ],
+          "impacts": [
+            "Eliminated manual SWIFT message processing for a government bank.",
+            "Reduced operational processing effort and associated manual processing costs.",
+            "Improved consistency and efficiency of SWIFT message handling through automation.",
+            "Delivered the production system within 6 months as part of a 6-person engineering team."
           ]
         }
       ]
@@ -238,17 +298,26 @@
       "tenure": "",
       "projects": [
         {
-          "name": "AODoubleclick Inc.",
-          "type": "E-Commerce Website",
+          "title": "AODoubleclick Inc.",
+          "subtitle": "E-Commerce Platform",
+          "problem": "An e-commerce platform required personalized product recommendations, scalable backend services, and integration with third-party APIs to improve customer engagement and sales performance.",
+          "role": "Full Stack Developer | Team of 4 | 3 months",
+          "technologies": ["Python", "Spring Boot", "MySQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
           "url": "https://www.aodoubleclick.com",
-          "technologies": ["Python","Spring Boot", "MySQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
-          "role": "Full Stack",
           "team_size": 4,
-          "development_duration": "3 months",
-          "status": "Production",
-          "highlights": [
-            "Implemented recommender system (content-based and collaborative filtering), boosting sales by 30%",
-            "Feature/API development and third part API integration"
+          "contributions": [
+            "Designed and implemented a product recommendation system using content-based and collaborative filtering techniques.",
+            "Developed backend features and REST APIs using Spring Boot.",
+            "Implemented frontend and full-stack features for the e-commerce platform.",
+            "Integrated multiple third-party APIs to extend platform functionality.",
+            "Implemented Kafka-based event processing and Redis-based caching.",
+            "Containerized application services using Docker and supported CI/CD deployment through Jenkins and Kubernetes."
+          ],
+          "impacts": [
+            "30% increase in sales attributed to the personalized recommendation system.",
+            "Delivered the e-commerce platform within 3 months as part of a 4-person engineering team.",
+            "Enabled personalized product discovery through content-based and collaborative filtering.",
+            "Established scalable, containerized backend infrastructure using Kafka, Redis, Docker, Jenkins, and Kubernetes."
           ]
         }
       ]
@@ -261,17 +330,23 @@
       "tenure": "",
       "projects": [
         {
-          "name": "",
-          "type": "",
+          "title": "Academic Software Development & Teaching",
+          "subtitle": "In-House Software Development & Computer Science Education",
+          "problem": "The organization required in-house software development support while also providing practical programming and computer science education to undergraduate students.",
+          "role": "Software Developer & Lab Instructor",
+          "technologies": ["Java", "JavaFX", "MySQL", "SQLite", "Data Structures", "Algorithms"],
           "url": "",
-          "technologies": ["Java", "JavaFX", "MySQL", "SQLite", "Data Structure"],
-          "role": "",
           "team_size": 0,
-          "development_duration": 0,
-          "status": "",
-          "highlights": [
-            "Worked in the in-house software development",
-            "Taught undergrad lab courses (Java, C, C++, Data Structure, Algorithm)"
+          "contributions": [
+            "Contributed to in-house software development using Java, JavaFX, MySQL, and SQLite.",
+            "Designed and implemented application features and database components.",
+            "Taught undergraduate laboratory courses covering Java, C, C++, Data Structures, and Algorithms.",
+            "Provided hands-on programming guidance and assisted students with practical software development exercises."
+          ],
+          "impacts": [
+            "Contributed to the development and maintenance of in-house software solutions.",
+            "Delivered practical programming and computer science laboratory instruction to undergraduate students.",
+            "Covered core programming, data structures, and algorithmic concepts across multiple undergraduate courses."
           ]
         }
       ]
