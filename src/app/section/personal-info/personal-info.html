@@ -4,13 +4,13 @@
     <h3 class="h3 mt-3">{{ personalInfo.first_name }} <span class="lastName">{{ personalInfo.last_name }}</span></h3>
 
     <p class="intro">
-      <span class="fw-bolder">Independent Contractor</span>
+      <span class="fw-bolder">Independent Software Contractor</span>
       <i class="bi bi-dot"></i> <span class="fw-bolder">Solution Architect</span>
-      <span class="fw-bolder">Senior Software Engineer</span>
+      <i class="bi bi-dot"></i> <span class="fw-bolder">Senior Java/Spring Boot Engineer</span>
     </p>
 
     <p class="taglines">
-      Backend Engineering <i class="bi bi-dash"></i>
+      <span>Backend Engineering</span> <i class="bi bi-dash"></i>
       System Design <i class="bi bi-dash"></i>
       Distributed System <i class="bi bi-dash"></i>
       Microservice <i class="bi bi-dash"></i>
@@ -23,16 +23,20 @@
 
 <div class="row">
   <div class="col-xl-12">
+
     <p class="justify-content-evenly">
-      {{ personalInfo.summary }}
+      I Engineer Systems That Matter.<br /><br />
+      Independent Software Engineer specializing in Java, Spring Boot, distributed systems, microservices and scalable enterprise architecture.<br />
+      9+ years building production systems across fintech, SaaS, healthcare and AI.<br /><br />
+      Available for selective high-impact engineering engagements.<br />
     </p>
 
-    <p>
-      <span class="fw-bold">Contact Me: </span>
+    <p class="mt-4">
+      <span class="fw-bold">Reach Me: </span>
       <span class="fw-bolder"></span><i class="bi bi-clipboard-fill"></i>&nbsp;<a [href]="personalInfo.cv" target="_blank">Download CV</a>&nbsp;
       <span class="fw-bolder"></span><i class="bi bi-github"></i>&nbsp;<a [href]=personalInfo.github target="_blank">sadatrafsanjani</a>&nbsp;
       <span class="fw-bolder"></span><i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.linkedin target="_blank">sadatrafsanjani</a>&nbsp;
-      <span class="fw-bolder"></span><i class="bi bi-linkedin"></i>&nbsp;<a [href]=personalInfo.email target="_blank">{{ personalInfo.email }}</a>
+      <span class="fw-bolder"></span><i class="bi bi-envelope-fill"></i>&nbsp;<a [href]=personalInfo.email target="_blank">{{ personalInfo.email }}</a>
     </p>
   </div>
 </div>

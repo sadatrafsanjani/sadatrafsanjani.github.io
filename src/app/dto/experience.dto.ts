@@ -1,4 +1,4 @@
-import {ProjectDTO} from './project.dto';
+import {ProjectDTO} from './project/project.dto';
 
 export interface ExperienceDTO {
   title: string;

@@ -6,11 +6,14 @@
     <div class="col-xl-12 mb-3">
 
       @if (experience.title){
+
         <div class="row">
-          <div class="col-md-10">
-            <span class="fw-bold">{{ experience.title }}</span> &#64; <span class="fw-bold"><a [href]=experience.website target="_blank">{{ experience.company }}</a></span> | {{ experience.employment_type }}
+          <div class="col-md-8 mb-3">
+            <h4>
+              <span class="fw-bold">{{ experience.title }}</span> &#64; <span class="fw-bold"><a [href]=experience.website target="_blank">{{ experience.company }}</a></span>
+            </h4>
           </div>
-          <div class="col-md-2 text-sm-end">
+          <div class="col-md-4 text-sm-end">
             <span class="text-info-emphasis">{{ experience.tenure }}</span>
           </div>
         </div>
@@ -18,31 +21,42 @@
 
       @for (project of experience.projects; track $index) {
 
-        <p>
+        <div class="row">
+          <div class="col-md-12 mb-4">
 
-          @if (project.name){
-            <span class="fw-medium">{{ project.name }}</span> – {{ project.type }} @if (project.url){ | <a [href]=project.url target="_blank">URL</a> } <br />
-          }
+            <h5 class="mb-2">{{ project.title }} — {{ project.subtitle }}</h5>
 
-          @if (project.technologies.length > 0){
+            <h6>The Problem</h6>
+            <p>{{ project.problem }}</p>
 
-            <span class="fw-semibold">Technology:</span> {{ project.technologies.join(", ")}}<br />
-          }
+            <h6>My Role</h6>
+            <p>{{ project.role }}</p>
+            <p>
+              <span class="fw-semibold">Technology:</span>
+              @if (project.technologies.length > 0){
+                {{ project.technologies.join(", ")}}<br />
+              }
+            </p>
 
-          @if (project.role){
+            <h6>Key Engineering Contributions</h6>
+            <ul class="mb-4">
+              @for (contribution of project.contributions; track $index) {
 
-            <span class="fw-semibold">Role:</span> {{ project.role }} |
-            <span class="fw-semibold">Team:</span> {{ project.team_size }} |
-            <span class="fw-semibold">Duration:</span> {{ project.development_duration }} |
-            <span class="fw-semibold">Status:</span> {{ project.status }}<br />
-          }
+                <li>{{ contribution }}</li>
+              }
+            </ul>
 
-          @for (highlight of project.highlights; track $index) {
+            <h6>Impact</h6>
+            <p>
+              @for (impact of project.impacts; track $index) {
 
-            <div>- {{ highlight }}</div>
-          }
-        </p>
+                <div>- {{ impact }}</div>
+              }
+            </p>
+          </div>
+        </div>
       }
+
     </div>
   }
 

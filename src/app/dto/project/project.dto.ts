@@ -1,11 +1,13 @@
 import {ImpactDTO} from './impact.dto';
 
 export interface ProjectDTO {
-  name: string;
+  title: string;
   subtitle: string;
   problem: string;
   role: string;
-  technology: string[];
-  keyEngineeringWork: string[];
-  impact: ImpactDTO[];
+  technologies: string[];
+  url: string;
+  teamSize: number;
+  contributions: string[];
+  impacts: ImpactDTO[];
 }
