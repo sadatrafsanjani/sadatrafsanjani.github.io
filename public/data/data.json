@@ -119,11 +119,7 @@
           "subtitle": "Retail Banking Platform for City Bank PLC",
           "problem": "A retail banking platform required secure and reliable digital banking services, including deposit management, card controls, OTP security, customer notifications, and high-volume transaction processing.",
           "role": "Technical Lead | Team of 12 | 8 months",
-          "technologies": [
-            "Spring Boot",
-            "Oracle",
-            "Tomcat"
-          ],
+          "technologies": ["Spring Boot", "Oracle", "Tomcat"],
           "url": "https://ibank.thecitybank.com",
           "team_size": 12,
           "contributions": [
