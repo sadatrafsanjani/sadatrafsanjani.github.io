@@ -167,7 +167,7 @@
             "Managed server infrastructure, application deployment, and production maintenance.",
             "Led the development team and coordinated technical implementation."
           ],
-          "impact": [
+          "impacts": [
             "Built the complete platform from scratch within 3 months.",
             "Established a production-ready 3-tier architecture and deployment infrastructure.",
             "Led a 12-person engineering team through system development and delivery.",
@@ -198,7 +198,7 @@
             "Performed regular production bug fixing, troubleshooting, and feature development.",
             "Mentored junior programmers and provided technical guidance during development."
           ],
-          "impact": [
+          "impacts": [
             "1000+ daily doctor-patient consultations supported through the video consultation system.",
             "50% increase in doctor bookings through improved specialty and location-based search.",
             "Enabled scalable online healthcare consultations through a production-ready telemedicine platform.",
@@ -229,7 +229,7 @@
             "Exposed the trained ML model through a production API using Flask and Waitress.",
             "Optimized the inference pipeline for integration with the identity verification workflow."
           ],
-          "impact": [
+          "impacts": [
             "99.2% fraud detection accuracy achieved on the production model.",
             "90% reduction in manual identity verification review time.",
             "99% reduction in E-KYC fraud.",
