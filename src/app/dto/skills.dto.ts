@@ -1,10 +1,10 @@
 export interface SkillsDTO {
-  languages: string[];
-  frameworks: string[];
+  python: string[];
+  java: string[];
   databases: string[];
   messaging: string[];
-  devops_tools: string[];
-  build_tools: string[];
-  collaboration_tools: string[];
+  cloud_devops: string[];
   ai: string[];
+  build_tools: string[];
+  management: string[];
 }
