@@ -6,18 +6,18 @@
     "github": "https://github.com/sadatrafsanjani",
     "linkedin": "https://www.linkedin.com/in/sadatrafsanjani",
     "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
-    "cv": "https://drive.google.com/file/d/1YRq_lN8zSa0bV_aZMFLM6GJtVQrQiDqo/view?usp=sharing"
+    "cv": "https://drive.google.com/file/d/1TDQQsQ35ObmFl8pjUw1S2DrlqLEiCvXV/view?usp=sharing"
   },
 
   "skills": {
-    "languages": ["Java", "Python", "SQL", "JavaScript", "TypeScript"],
-    "frameworks": ["Spring Boot", "Flask", "Django", "JavaFX", "Angular", "ReactJS", "ElectronJS"],
-    "databases": ["PostgreSQL", "Oracle", "MySQL", "MongoDB", "Redis", "Elasticsearch", "Memcached"],
-    "messaging": ["Kafka", "RabbitMQ"],
-    "devops_tools": ["Docker", "Kubernetes", "AWS", "Jenkins", "SonarQube", "NGINX"],
+    "python": ["Python", "FastAPI", "Flask", "Django", "Pydantic", "SQLAlchemy", "Pytest", "asyncio", "Uvicorn", "Celery", "HTTPX", "PyYAML", "PyArrow", "Alembic"],
+    "java": ["Java", "Spring Boot", "Spring Security", "Spring Batch", "Quartz", "WebSocket", "Hibernate", "JDBC", "Flyway"],
+    "databases": ["Snowflake", "Redshift", "DuckDB", "ClickHouse", "PostgreSQL", "Oracle", "MySQL", "MongoDB", "Elasticsearch", "Redis", "Memcached"],
+    "messaging": ["Kafka", "Kafka Connect", "Kafka Streams", "RabbitMQ"],
+    "cloud_devops": ["Apache Airflow", "Kubernetes", "Docker", "Jenkins", "SonarQube", "AWS", "ETL/ELT"],
+    "ai": ["TensorFlow", "Keras", "PyTorch", "OpenCV", "NumPy", "Scikit-Learn", "Pandas", "Machine Learning", "CNN", "Transformer", "Generative Models", "MCP"],
     "build_tools": ["Gradle", "Maven"],
-    "collaboration_tools": ["JIRA", "Confluence", "Bitbucket", "GitLab", "GitHub", "SVN"],
-    "ai": ["TensorFlow", "Keras", "PyTorch", "OpenCV", "NumPy", "Scikit-Learn", "Pandas", "Machine Learning", "Deep Learning", "CNN"]
+    "management": ["JIRA", "Confluence", "Bitbucket", "GitLab", "SVN"]
   },
 
   "experience": [
