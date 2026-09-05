@@ -8,18 +8,20 @@
     "summary": "Senior Software Engineer with 9+ years of experience in designing and implementing enterprise-scale microservices architectures for banking and SaaS platforms. Proven track record leading cross-functional teams to deliver high performance, multi-tenant systems. Seeking Solution Architect role in fintech/enterprise/niche software.",
     "cv": "https://drive.google.com/file/d/1TDQQsQ35ObmFl8pjUw1S2DrlqLEiCvXV/view?usp=sharing"
   },
-
   "skills": {
-    "python": ["Python", "FastAPI", "Flask", "Django", "Pydantic", "SQLAlchemy", "Pytest", "asyncio", "Uvicorn", "Celery", "HTTPX", "PyYAML", "PyArrow", "Alembic"],
-    "java": ["Java", "Spring Boot", "Spring Security", "Spring Batch", "Quartz", "WebSocket", "Hibernate", "JDBC", "Flyway"],
-    "databases": ["Snowflake", "Redshift", "DuckDB", "ClickHouse", "PostgreSQL", "Oracle", "MySQL", "MongoDB", "Elasticsearch", "Redis", "Memcached"],
+    "frontend": ["JavaScript", "TypeScript", "Angular", "React"],
+    "backend": ["Java", "Spring Boot", "Spring Framework", "Spring MVC", "Spring Security", "Spring Batch", "Spring Cloud", "Quartz"],
+    "api": ["RESTful APIs", "HTTP/HTTPS", "JSON", "OAuth 2.0", "JWT", "API Design", "WebSocket", "OpenAPI", "Swagger"],
+    "database": ["MySQL", "PostgreSQL", "Oracle", "MongoDB", "Redis", "Elasticsearch", "Hibernate", "JPA", "JDBC", "Flyway"],
     "messaging": ["Kafka", "Kafka Connect", "Kafka Streams", "RabbitMQ"],
-    "cloud_devops": ["Apache Airflow", "Kubernetes", "Docker", "Jenkins", "SonarQube", "AWS", "ETL/ELT"],
-    "ai": ["TensorFlow", "Keras", "PyTorch", "OpenCV", "NumPy", "Scikit-Learn", "Pandas", "Machine Learning", "CNN", "Transformer", "Generative Models", "MCP"],
+    "distributed_systems": ["Event-Driven Architecture", "Asynchronous Processing", "Distributed Systems"],
+    "cloud_devops": ["AWS", "Docker", "Kubernetes", "Jenkins", "CI/CD", "SonarQube", "Git Action"],
+    "testing": ["JUnit", "Mockito", "TDD", "BDD", "Unit Testing", "Integration Testing", "Static Code Analysis"],
     "build_tools": ["Gradle", "Maven"],
-    "management": ["JIRA", "Confluence", "Bitbucket", "GitLab", "SVN"]
+    "architecture": ["Microservices", "Distributed Systems", "SaaS", "Multi-Tenant Systems", "Scalable", "High-Performance system"],
+    "orchestration": ["Apache Airflow", "ETL/ELT"],
+    "management": ["Agile", "Scrum", "Kanban", "JIRA", "Confluence", "Git", "Bitbucket", "GitLab"]
   },
-
   "experience": [
     {
       "title": "Senior Software Developer",
@@ -31,10 +33,9 @@
           "title": "My Legal Software",
           "subtitle": "Multi-Tenant Legal Practice Management SaaS",
           "problem": "A legacy legal practice management platform needed to support multiple law firms while handling increasing real-time communication, search, notification, reporting, and integration requirements. The system needed better scalability, responsiveness, reliability, and deployment automation while continuing to support production workloads.",
-          "role": "Technical Lead | Team of 15 | 2 years 6 months",
+          "role": "Technical Lead",
           "technologies": ["Spring Boot", "MySQL", "React", "Tailwind", "Kafka", "Redis", "Elasticsearch", "Docker", "Kubernetes"],
           "url": "https://mylegalsoftware.com",
-          "team_size": 15,
           "contributions": [
             "Redesigned the platform from a monolithic architecture to event-driven microservices.",
             "Implemented a WebSocket-based real-time communication system handling 50K+ messages daily.",
@@ -70,10 +71,9 @@
           "title": "Real Time Gross Settlement",
           "subtitle": "Inter-Bank Fund Transfer System",
           "problem": "A legacy inter-bank fund transfer system required modernization to improve maintainability, security, transaction processing, and integration with the Central Bank's settlement infrastructure.",
-          "role": "Lead Engineer | Team of 12 | 12 months",
+          "role": "Lead Engineer",
           "technologies": ["Spring Boot", "React", "Bootstrap", "Tailwind", "Oracle", "Quartz", "Redis", "Docker", "Kubernetes"],
           "url": "",
-          "team_size": 12,
           "contributions": [
             "Converted the legacy system to a modern 3-tier architecture.",
             "Implemented JWT and refresh token-based authentication.",
@@ -96,10 +96,9 @@
           "title": "CityLive",
           "subtitle": "Corporate Banking Platform for City Bank PLC",
           "problem": "A corporate banking platform required scalable transaction processing, reliable third-party banking integrations, and high availability across multiple application servers to support large-scale corporate banking operations.",
-          "role": "Technical Lead | Team of 12 | 4 months",
+          "role": "Technical Lead",
           "technologies": ["Spring Boot", "Bootstrap", "Akka", "Oracle", "Kafka", "Tomcat"],
           "url": "https://www.citytouch.com.bd/CityBank/login",
-          "team_size": 12,
           "contributions": [
             "Integrated third-party mobile banking APIs with the corporate banking platform.",
             "Designed and implemented a bulk transaction microservice capable of handling 1M+ transactions at a time.",
@@ -121,7 +120,6 @@
           "role": "Technical Lead | Team of 12 | 8 months",
           "technologies": ["Spring Boot", "Oracle", "Tomcat"],
           "url": "https://ibank.thecitybank.com",
-          "team_size": 12,
           "contributions": [
             "Implemented FD/DPS system APIs for retail banking operations.",
             "Developed OTP lock and unlock functionality to strengthen account security.",
@@ -141,8 +139,8 @@
       ]
     },
     {
-      "title": "Senior Software Engineer",
-      "company": "RMS Academy E-Learning Platform",
+      "title": "Co-Founder & Senior Software Engineer",
+      "company": "RMS E-Learning Platform",
       "website": "",
       "tenure": "April, 2022 - June, 2022",
       "projects": [
@@ -153,7 +151,6 @@
           "role": "Technical Lead | Team of 12 | 3 months",
           "technologies": ["Spring Boot", "Angular", "PostgreSQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
           "url": "",
-          "team_size": 12,
           "contributions": [
             "Designed and built the complete e-learning platform from scratch using a 3-tier architecture.",
             "Designed the system architecture and supporting infrastructure.",
@@ -185,7 +182,6 @@
           "role": "Full-stack Developer | Team of 6 | 6 months",
           "technologies": ["Spring Boot", "Angular", "MySQL", "AWS", "NGINX"],
           "url": "https://jotno.net",
-          "team_size": 6,
           "contributions": [
             "Implemented a full-fledged video call-based consultation system.",
             "Developed an efficient doctor search portal with specialty and location-based filtering.",
@@ -208,16 +204,15 @@
       "company": "Dutch-Bangla Bank PLC",
       "website": "https://www.dutchbanglabank.com",
       "employment_type": "On-Site",
-      "tenure": "March, 2020 - October, 2021",
+      "tenure": "February, 2020 - October, 2021",
       "projects": [
         {
           "title": "E-KYC Fraud Detection System",
           "subtitle": "AI-Powered Identity Verification",
           "problem": "Manual identity verification required significant review effort and was vulnerable to fraudulent submissions. A production-ready automated fraud detection system was needed to process large volumes of identity documents and reduce manual verification workload.",
-          "role": "ML Engineer | Team of 1 | 6 months",
+          "role": "ML Engineer",
           "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "Flask", "Waitress"],
           "url": "",
-          "team_size": 1,
           "contributions": [
             "Built the complete ML pipeline from data collection and custom dataset preparation to production deployment.",
             "Designed and trained a CNN-based fraud detection model using 100K+ labeled images.",
@@ -246,10 +241,9 @@
           "title": "Web Scraping System",
           "subtitle": "Custom Multi-threaded Web Scraping Engine",
           "problem": "A flexible web scraping solution was required to extract and process data from different websites and resources efficiently while supporting customizable scraping logic and structured data storage.",
-          "role": "Developer | Team of 6 | 6 months",
+          "role": "Lead Developer",
           "technologies": ["Java", "Multithreading", "Regular Expressions", "Groovy", "SQLite"],
           "url": "",
-          "team_size": 6,
           "contributions": [
             "Developed a custom web scraping engine capable of parsing data from different websites and resources.",
             "Implemented a multi-threaded scraping engine to improve concurrent processing and extraction performance.",
@@ -268,10 +262,9 @@
           "title": "SWIFT Message Parser",
           "subtitle": "Banking Message Processing Automation",
           "problem": "Manual processing of SWIFT messages in a government bank was time-consuming, operationally expensive, and prone to human error. An automated message parsing solution was required to streamline the workflow.",
-          "role": "Developer | Team of 6 | 6 months",
-          "technologies": ["Python", "SQLite"],
+          "role": "lead Developer",
+          "technologies": ["Python", "SQLite", "Qt"],
           "url": "",
-          "team_size": 6,
           "contributions": [
             "Developed a SWIFT message parsing system for automated message processing.",
             "Designed parsing logic to extract and process structured information from SWIFT messages.",
@@ -297,10 +290,9 @@
           "title": "AODoubleclick Inc.",
           "subtitle": "E-Commerce Platform",
           "problem": "An e-commerce platform required personalized product recommendations, scalable backend services, and integration with third-party APIs to improve customer engagement and sales performance.",
-          "role": "Full Stack Developer | Team of 4 | 3 months",
+          "role": "Full Stack Developer",
           "technologies": ["Python", "Spring Boot", "MySQL", "Kafka", "Redis", "Docker", "Jenkins", "Kubernetes"],
           "url": "https://www.aodoubleclick.com",
-          "team_size": 4,
           "contributions": [
             "Designed and implemented a product recommendation system using content-based and collaborative filtering techniques.",
             "Developed backend features and REST APIs using Spring Boot.",
@@ -326,13 +318,12 @@
       "tenure": "",
       "projects": [
         {
-          "title": "Academic Software Development & Teaching",
+          "title": "Officer",
           "subtitle": "In-House Software Development & Computer Science Education",
           "problem": "The organization required in-house software development support while also providing practical programming and computer science education to undergraduate students.",
           "role": "Software Developer & Lab Instructor",
           "technologies": ["Java", "JavaFX", "MySQL", "SQLite", "Data Structures", "Algorithms"],
           "url": "",
-          "team_size": 0,
           "contributions": [
             "Contributed to in-house software development using Java, JavaFX, MySQL, and SQLite.",
             "Designed and implemented application features and database components.",
